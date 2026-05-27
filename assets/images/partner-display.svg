@@ -1,0 +1,12 @@
+<!-- TODO: Replace with official trade and retail photography. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="title">
+  <title>Minh họa trưng bày sản phẩm dành cho đối tác</title>
+  <rect width="960" height="650" fill="#F6EFE3"/>
+  <rect x="70" y="124" width="820" height="414" rx="14" fill="#E8D6B8"/>
+  <path fill="#3A1E14" d="M104 191h752v20H104zm0 135h752v20H104zm0 135h752v20H104z"/>
+  <g fill="#A90F0F"><path d="M155 137h77v54h-77z"/><path d="M259 145h87v46h-87z"/><path d="M535 133h80v58h-80z"/></g>
+  <g fill="#B88935"><path d="M375 143h104v48H375z"/><path d="M650 145h118v46H650z"/><path d="M164 277h118v49H164z"/><path d="M504 267h108v59H504z"/></g>
+  <g fill="#FFF8EC"><path d="M327 273h99v53h-99z"/><path d="M664 278h110v48H664z"/><path d="M170 411h95v50h-95z"/><path d="M297 401h108v60H297z"/></g>
+  <text x="70" y="78" fill="#3A1E14" font-family="Georgia, serif" font-size="38">Danh mục sẵn sàng phân phối</text>
+  <text x="72" y="582" fill="#7A6252" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">BÁN LẺ · HORECA · QUÀ TẶNG · VĂN PHÒNG</text>
+</svg>

@@ -1,0 +1,8 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="Viên nén Trung Nguyên Legend">
+ <defs><linearGradient id="b" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#21140F"/><stop offset="1" stop-color="#5C2F1D"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="620" rx="188" ry="22" fill="#3A1E14" opacity=".16"/>
+ <rect x="105" y="186" width="390" height="287" rx="8" fill="url(#p)"/><rect x="123" y="204" width="354" height="251" fill="none" stroke="#B88935" stroke-width="3"/>
+ <text x="300" y="271" text-anchor="middle" fill="#D6A84F" font-family="Georgia" font-size="25">TRUNG NGUYÊN</text><text x="300" y="311" text-anchor="middle" fill="#FFF8EC" font-family="Arial" font-size="22" letter-spacing="7">LEGEND</text>
+ <g fill="#B88935"><path d="M178 376h48l12 43h-72z"/><path d="M276 376h48l12 43h-72z"/><path d="M374 376h48l12 43h-72z"/></g><text x="300" y="519" text-anchor="middle" fill="#3A1E14" font-family="Arial" font-size="17" letter-spacing="3">VIÊN NÉN CÀ PHÊ</text>
+</svg>

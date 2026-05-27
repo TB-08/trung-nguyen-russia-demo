@@ -1,0 +1,7 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="Trung Nguyên Legend Cappuccino">
+ <defs><linearGradient id="b" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#E8D6B8"/><stop offset="1" stop-color="#B88935"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="620" rx="180" ry="22" fill="#3A1E14" opacity=".16"/>
+ <path fill="url(#p)" d="M146 119h308l15 474H131z"/><rect x="146" y="119" width="308" height="70" fill="#A90F0F"/><rect x="131" y="438" width="338" height="92" fill="#FFF8EC"/>
+ <text x="300" y="161" text-anchor="middle" fill="#FFF8EC" font-family="Arial" font-size="17" letter-spacing="4">LEGEND</text><text x="300" y="289" text-anchor="middle" fill="#3A1E14" font-family="Georgia" font-size="34">Cappuccino</text><text x="300" y="337" text-anchor="middle" fill="#A90F0F" font-family="Arial" font-size="14" letter-spacing="4">MỊN MÀNG</text><text x="300" y="490" text-anchor="middle" fill="#5C2F1D" font-family="Georgia" font-size="22">HƯƠNG KEM</text>
+</svg>

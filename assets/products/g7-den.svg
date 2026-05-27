@@ -1,0 +1,7 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="G7 Đen">
+ <defs><linearGradient id="b"><stop stop-color="#F6EFE3"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#21140F"/><stop offset="1" stop-color="#080403"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="615" rx="168" ry="20" fill="#3A1E14" opacity=".18"/>
+ <path fill="url(#p)" d="M155 122h290l18 460H137z"/><path fill="#B88935" d="M155 122h290v8H155z"/><path fill="#A90F0F" d="M137 444h326v70H137z"/>
+ <text x="190" y="283" fill="#FFF8EC" font-family="Arial" font-weight="700" font-size="92">G7</text><text x="213" y="333" fill="#D6A84F" font-family="Arial" font-size="27" letter-spacing="8">ĐEN</text><text x="195" y="486" fill="#FFF8EC" font-family="Georgia" font-weight="700" font-size="24">KHÔNG ĐƯỜNG</text>
+</svg>

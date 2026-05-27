@@ -1,0 +1,24 @@
+<!-- TODO: Replace with official Trung Nguyen Legend photography. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="title">
+  <title>Minh họa vùng nguyên liệu Buôn Ma Thuột</title>
+  <defs>
+    <linearGradient id="sky" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient>
+    <linearGradient id="earth" y2="1"><stop stop-color="#B88935"/><stop offset="1" stop-color="#3A1E14"/></linearGradient>
+  </defs>
+  <rect width="960" height="650" fill="url(#sky)"/>
+  <circle cx="735" cy="145" r="70" fill="#D6A84F" opacity=".5"/>
+  <path d="M0 330 172 225l176 93 177-122 214 126 115-88 106 92v324H0z" fill="#5C2F1D" opacity=".16"/>
+  <path d="M0 405c198-74 342-54 480 0 169 67 323 37 480-14v259H0z" fill="url(#earth)"/>
+  <g fill="none" stroke="#E8D6B8" stroke-width="5" opacity=".65">
+    <path d="M0 466c192-65 318-48 480 8 166 57 319 43 480-24"/>
+    <path d="M0 512c192-65 318-48 480 8 166 57 319 43 480-24"/>
+    <path d="M0 558c192-65 318-48 480 8 166 57 319 43 480-24"/>
+  </g>
+  <g transform="translate(115 375)">
+    <path fill="#28503B" d="M60 118C-4 61 8 18 62 4c17 43 19 77-2 114z"/>
+    <path fill="#476B42" d="M63 118C45 51 72 13 125 2c8 53-12 91-62 116z"/>
+    <circle cx="64" cy="68" r="12" fill="#A90F0F"/><circle cx="82" cy="83" r="13" fill="#C41E1E"/>
+  </g>
+  <text x="56" y="82" fill="#3A1E14" font-family="Georgia, serif" font-size="44">Buôn Ma Thuột</text>
+  <text x="58" y="122" fill="#7A6252" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">CỘI NGUỒN ROBUSTA VIỆT NAM</text>
+</svg>

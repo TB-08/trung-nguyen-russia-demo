@@ -1,0 +1,11 @@
+<!-- TODO: Replace with official Trung Nguyen Legend asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="318" height="92" viewBox="0 0 318 92" role="img" aria-labelledby="title">
+  <title>Trung Nguyên Legend</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#A90F0F" d="M20 11h47l-5 10H51v31c0 11-8 18-19 18-8 0-14-3-18-9l8-7c3 4 6 6 10 6 5 0 8-3 8-9V21H25z"/>
+    <path fill="#B88935" d="M21 76h42v3H21z"/>
+    <text x="80" y="39" fill="#3A1E14" font-family="Georgia, serif" font-size="20" font-weight="700" letter-spacing="1.2">TRUNG NGUYÊN</text>
+    <text x="80" y="65" fill="#A90F0F" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5.4">LEGEND</text>
+    <text x="81" y="81" fill="#7A6252" font-family="Arial, sans-serif" font-size="7.2" letter-spacing="2.2">CÀ PHÊ NĂNG LƯỢNG</text>
+  </g>
+</svg>

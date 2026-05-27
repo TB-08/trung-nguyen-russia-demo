@@ -1,0 +1,9 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="Phin giấy Trung Nguyên Legend">
+ <defs><linearGradient id="b" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="620" rx="184" ry="22" fill="#3A1E14" opacity=".15"/>
+ <rect x="119" y="137" width="362" height="424" rx="8" fill="url(#p)" stroke="#B88935" stroke-width="4"/><rect x="119" y="137" width="362" height="76" fill="#A90F0F"/>
+ <text x="300" y="185" text-anchor="middle" fill="#FFF8EC" font-family="Arial" font-size="21" letter-spacing="5">LEGEND</text><text x="300" y="294" text-anchor="middle" fill="#3A1E14" font-family="Georgia" font-size="39">Phin giấy</text>
+ <path d="M213 369h174l-20 78c-3 16-18 25-34 25h-66c-16 0-31-9-34-25z" fill="#A90F0F"/><path d="M232 369 213 346m155 23 20-23" fill="none" stroke="#B88935" stroke-width="7"/>
+ <text x="300" y="519" text-anchor="middle" fill="#7A6252" font-family="Arial" font-size="13" letter-spacing="3">TIỆN LỢI</text>
+</svg>

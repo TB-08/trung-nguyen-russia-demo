@@ -1,0 +1,18 @@
+<!-- TODO: Replace with official Trung Nguyen Legend photography. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="title">
+  <title>Minh họa trải nghiệm pha cà phê</title>
+  <defs>
+    <radialGradient id="back"><stop stop-color="#F6EFE3"/><stop offset="1" stop-color="#E8D6B8"/></radialGradient>
+    <linearGradient id="cup"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient>
+  </defs>
+  <rect width="960" height="650" fill="url(#back)"/>
+  <rect y="492" width="960" height="158" fill="#3A1E14"/>
+  <ellipse cx="480" cy="527" rx="224" ry="26" fill="#080403" opacity=".24"/>
+  <path d="M325 294h285v160c0 64-62 89-143 89-80 0-142-25-142-89z" fill="url(#cup)"/>
+  <path d="M609 326h39c75 0 74 104 2 110h-41" fill="none" stroke="#E8D6B8" stroke-width="22"/>
+  <ellipse cx="467" cy="295" rx="142" ry="30" fill="#FFF8EC"/>
+  <ellipse cx="467" cy="300" rx="118" ry="20" fill="#3A1E14"/>
+  <path d="M417 250c-25-50 27-54 1-109M474 250c-25-50 27-54 1-109M531 250c-25-50 27-54 1-109" fill="none" stroke="#B88935" stroke-width="7" opacity=".65"/>
+  <text x="54" y="74" fill="#A90F0F" font-family="Arial, sans-serif" font-weight="700" font-size="15" letter-spacing="4">NGHI THỨC CÀ PHÊ</text>
+  <text x="54" y="122" fill="#3A1E14" font-family="Georgia, serif" font-size="42">Đậm sâu. Tỉnh thức.</text>
+</svg>

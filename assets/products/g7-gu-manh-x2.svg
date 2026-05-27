@@ -1,0 +1,7 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="G7 Gu Mạnh X2">
+ <defs><linearGradient id="b" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#A90F0F"/><stop offset=".46" stop-color="#3A1E14"/><stop offset="1" stop-color="#080403"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="615" rx="170" ry="20" fill="#3A1E14" opacity=".16"/>
+ <path fill="url(#p)" d="M150 120h300l23 464H127z"/><path fill="#D6A84F" d="M150 120h300v10H150z"/><path fill="#C41E1E" d="M127 433h346v88H127z"/>
+ <text x="188" y="275" fill="#FFF8EC" font-family="Arial" font-weight="700" font-size="94">G7</text><text x="178" y="327" fill="#FFF8EC" font-family="Arial" font-size="23" letter-spacing="3">GU MẠNH</text><text x="243" y="492" fill="#FFF8EC" font-family="Arial" font-weight="700" font-size="42">X2</text>
+</svg>

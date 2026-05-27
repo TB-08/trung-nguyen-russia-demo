@@ -1,0 +1,7 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="G7 3 trong 1">
+ <defs><linearGradient id="b" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#C41E1E"/><stop offset="1" stop-color="#8B0000"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="615" rx="170" ry="20" fill="#3A1E14" opacity=".16"/>
+ <path fill="url(#p)" d="M159 127h282l22 453H137z"/><path fill="#B88935" d="M159 127h282v54H159z"/><path fill="#FFF8EC" d="M137 438h326v78H137z"/>
+ <text x="190" y="283" fill="#FFF8EC" font-family="Arial" font-weight="700" font-size="92">G7</text><text x="194" y="332" fill="#FFF8EC" font-family="Arial" font-size="24" letter-spacing="4">3 TRONG 1</text><text x="183" y="486" fill="#A90F0F" font-family="Georgia" font-weight="700" font-size="25">CÀ PHÊ HÒA TAN</text>
+</svg>

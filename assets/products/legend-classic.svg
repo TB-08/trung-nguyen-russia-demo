@@ -1,0 +1,8 @@
+<!-- TODO: Replace with official Trung Nguyen Legend product asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="Trung Nguyên Legend Cổ điển">
+ <defs><linearGradient id="b" y2="1"><stop stop-color="#FFF8EC"/><stop offset="1" stop-color="#E8D6B8"/></linearGradient><linearGradient id="p" y2="1"><stop stop-color="#A90F0F"/><stop offset="1" stop-color="#5C2F1D"/></linearGradient></defs>
+ <rect width="600" height="700" fill="url(#b)"/><ellipse cx="300" cy="620" rx="183" ry="22" fill="#3A1E14" opacity=".16"/>
+ <rect x="138" y="112" width="324" height="484" rx="7" fill="url(#p)"/><rect x="156" y="130" width="288" height="448" fill="none" stroke="#D6A84F" stroke-width="3"/>
+ <text x="300" y="241" text-anchor="middle" fill="#FFF8EC" font-family="Georgia" font-size="27">TRUNG NGUYÊN</text><text x="300" y="286" text-anchor="middle" fill="#D6A84F" font-family="Arial" font-size="28" letter-spacing="8">LEGEND</text><path stroke="#FFF8EC" opacity=".45" d="M201 325h198"/>
+ <text x="300" y="393" text-anchor="middle" fill="#FFF8EC" font-family="Georgia" font-size="31">CỔ ĐIỂN</text><text x="300" y="462" text-anchor="middle" fill="#FFF8EC" font-family="Arial" font-size="14" letter-spacing="4">HÀI HÒA</text>
+</svg>
