@@ -361,22 +361,270 @@
   }
 }
 
-/* Scale down website for 15.6 inch laptops (1366px - 1536px) */
+/* Responsive refinements for the custom home page */
+@media (max-width: 479px) {
+  .container,
+  .container--wide {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .header-inner {
+    min-height: 68px;
+    gap: 10px;
+  }
+
+  .brand-logo {
+    height: clamp(58px, 18vw, 76px);
+  }
+
+  .site-header--overlay:not(.is-scrolled) .brand-logo {
+    height: clamp(72px, 21vw, 88px);
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .lang-current {
+    padding-inline: 9px;
+  }
+
+  .menu-toggle {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu-toggle span:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-heading br {
+    display: none;
+  }
+
+  .hero-split {
+    height: 100svh;
+    min-height: 620px;
+    overflow: hidden;
+  }
+
+  .hero-split__image-container {
+    flex: 0 0 clamp(224px, 34svh, 315px);
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero-split__image-container::after {
+    height: 28px;
+  }
+
+  .hero-split__content {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: clamp(16px, 3.2svh, 28px) 22px clamp(18px, 3svh, 28px);
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .hero-split__copy {
+    flex: 1 1 auto;
+    justify-content: center;
+    margin-block: 0;
+    min-height: 0;
+  }
+
+  .hero-split__logo-wrap,
+  .hero-split__copy--minimal > div:first-child {
+    transform: translateX(0) !important;
+    margin-bottom: clamp(-12px, -2.6vw, -6px) !important;
+  }
+
+  .hero-split__logo-img,
+  .hero-split__copy--minimal > div:first-child img {
+    width: clamp(128px, 34vw, 170px) !important;
+    margin-inline: auto;
+  }
+
+  .hero-split__copy--minimal .hero-split__title {
+    font-size: clamp(1.95rem, 9.4vw, 2.55rem);
+    line-height: 1.04;
+  }
+
+  .hero-split__title-part,
+  .hero-split__title div {
+    transform: translateX(0) !important;
+  }
+
+  .hero-split__title .anim-flip {
+    white-space: normal !important;
+  }
+
+  .hero-split__footer {
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+
+  .arched-grid {
+    gap: 18px;
+    padding: 8px 0 0;
+  }
+
+  .arched-card {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    max-width: 320px;
+    padding: 32px 20px 28px;
+    border-radius: 44% / 22px;
+  }
+
+  .arched-card__media {
+    height: clamp(150px, 42vw, 190px);
+    margin-bottom: 18px;
+  }
+
+  .arched-card__title {
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .cinematic-portal {
+    height: 62svh;
+    min-height: 380px;
+    padding: 16px;
+  }
+
+  .portal-container {
+    border-radius: 36% / 9%;
+    transform: rotateX(0) scale(1);
+  }
+
+  .portal-play {
+    gap: 14px;
+  }
+
+  .portal-play__btn {
+    width: 76px;
+    height: 76px;
+  }
+
+  .portal-play__text {
+    opacity: 1;
+    transform: translateY(0);
+    font-size: 0.9rem;
+    letter-spacing: 0.22em;
+  }
+
+  .video-modal__content {
+    width: calc(100% - 28px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-split {
+    height: 100svh;
+    min-height: 720px;
+  }
+
+  .hero-split__image-container {
+    clip-path: none;
+  }
+
+  .hero-split__image-overlay {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.12) 42%, rgba(0, 0, 0, 0.35) 100%),
+      linear-gradient(to right, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.42) 62%, rgba(0, 0, 0, 0.52) 100%);
+  }
+
+  .hero-split__content {
+    width: min(58%, 520px);
+    padding: 118px 44px 54px 44px;
+  }
+
+  .hero-split__logo-wrap,
+  .hero-split__copy--minimal > div:first-child {
+    transform: translateX(0) !important;
+    margin-bottom: -28px !important;
+  }
+
+  .hero-split__logo-img,
+  .hero-split__copy--minimal > div:first-child img {
+    width: clamp(260px, 34vw, 340px) !important;
+  }
+
+  .hero-split__copy--minimal .hero-split__title {
+    font-size: clamp(3rem, 6vw, 4.1rem);
+  }
+
+  .hero-split__title-part,
+  .hero-split__title div {
+    transform: translateX(0) !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+  .header-inner {
+    display: flex;
+    min-height: 82px;
+  }
+
+  .header-primary {
+    display: none;
+  }
+
+  .brand-logo {
+    justify-self: start;
+    height: 78px;
+  }
+
+  .site-header--overlay:not(.is-scrolled) .brand-logo {
+    height: 108px;
+  }
+}
+
+/* Use real responsive sizing on laptops instead of browser zoom. */
 @media (min-width: 1024px) and (max-width: 1536px) {
-  html {
-    zoom: 0.8;
+  .hero-home,
+  .hero-split {
+    height: 100vh;
+    height: 100svh;
+    min-height: 640px;
   }
-  
-  /* Giữ nguyên kích thước ban đầu của thanh menu (bù trừ lại tỷ lệ zoom 0.8 của html) */
-  .site-header {
-    zoom: 1.25; 
+
+  .hero-split__content {
+    padding:
+      clamp(88px, 12vh, 128px)
+      clamp(28px, 3vw, 52px)
+      clamp(36px, 6vh, 58px)
+      clamp(110px, 11vw, 170px);
   }
-  
-  /* Bù trừ chiều cao cho các khối ảnh bìa để không bị ngắn lại do ảnh hưởng của zoom */
-  /* 100vh / 0.8 = 125vh */
-  .hero-home, .hero-split {
-    height: 125vh;
-    height: 125svh;
-    min-height: 125vh;
+
+  .hero-split__logo-wrap,
+  .hero-split__copy--minimal > div:first-child {
+    margin-bottom: clamp(-36px, -4vh, -22px) !important;
+  }
+
+  .hero-split__logo-img,
+  .hero-split__copy--minimal > div:first-child img {
+    width: clamp(320px, 40vh, 430px) !important;
+  }
+
+  .hero-split__copy--minimal .hero-split__title {
+    font-size: clamp(3.15rem, 7vh, 4.6rem);
+  }
+
+  .hero-split__footer {
+    margin-top: clamp(10px, 2vh, 20px);
   }
 }

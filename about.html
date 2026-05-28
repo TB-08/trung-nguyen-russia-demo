@@ -498,7 +498,7 @@
     /* RESPONSIVE */
     @media (max-width: 1024px) {
       .about-hero-grid, .vision-grid { grid-template-columns: 1fr; gap: 40px; }
-      .about-hero-title h1 { font-size: 3.5rem; }
+      .about-hero-title h1 { font-size: clamp(2.5rem, 8vw, 3.8rem); }
       .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
       .stat-item::after { display: none; }
       .solutions-grid { grid-template-columns: 1fr 1fr; }
@@ -506,14 +506,46 @@
       .vision-media { height: 400px; }
     }
     @media (max-width: 768px) {
-      .about-hero { padding-top: 120px; }
+      .about-hero { padding-top: 100px; }
+      .about-hero-title h1 { font-size: clamp(2rem, 9vw, 3rem); }
+      .about-hero-title .ghost-text { font-size: clamp(3.5rem, 15vw, 6rem); top: -20px; }
+      .about-hero-desc { padding-left: 20px; }
       .stats-grid, .values-grid, .solutions-grid { grid-template-columns: 1fr; gap: 20px; }
-      .value-card { padding: 40px; }
-      .about-hero-media { height: 50vh; }
-      .vision-callout { position: relative; max-width: 100%; border-radius: 0 0 20px 20px; }
+      .stat-item { padding-right: 0; }
+      .value-card { padding: 40px 24px; }
+      .about-hero-media { height: 40vh; }
+      .vision-callout { position: relative; max-width: 100%; border-radius: 0 0 20px 20px; padding: 30px 20px; }
       .vision-media { border-radius: 20px; height: auto; }
-      .timeline-wrapper { gap: 20px; }
-      .timeline-item { min-width: 280px; }
+      .vision-media img { height: 280px; width: 100%; object-fit: cover; }
+      
+      /* Timeline Responsive Stacking */
+      .timeline-slide {
+        min-width: calc(100vw - 48px);
+        padding-right: 24px;
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+      }
+      .slide-image {
+        width: 100%;
+        height: 240px;
+        border-radius: 120px 120px 0 0;
+        margin-left: 0;
+      }
+      .slide-content {
+        width: 100%;
+      }
+      .slide-year-ghost {
+        font-size: clamp(5rem, 20vw, 8rem);
+        margin-bottom: -20px;
+      }
+      .slide-text-box {
+        padding: 24px;
+      }
+      .slide-controls {
+        display: none !important;
+      }
     }
   </style>
 </head>
