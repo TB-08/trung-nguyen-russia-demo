@@ -4,20 +4,34 @@
    Trung Nguyen Legend Russia Demo - Core Design System
    ========================================================= */
 :root {
-  --color-cream: #FFF8EC;
+  --color-cream: #FFFBF5;
   --color-beige: #F6EFE3;
   --color-beige-dark: #E8D6B8;
-  --color-red: #A90F0F;
-  --color-red-bright: #C41E1E;
-  --color-red-dark: #8B0000;
-  --color-brown: #3A1E14;
-  --color-brown-soft: #5C2F1D;
+  
+  /* Primary Actions & Highlights (Previously Red, now sleek Black for Black/White theme) */
+  --color-red: #0F0C0A;
+  --color-red-bright: #2E2824;
+  --color-red-dark: #000000;
+  
+  /* Deep Rich Blacks & Charcoals */
+  --color-brown: #0F0C0A;
+  --color-brown-soft: #26211E;
+  --color-text: #24201D;
+  --color-muted: #6B625C;
+  
+  /* Standard Gold - For small accents & premium highlights */
   --color-gold: #B88935;
   --color-gold-soft: #D6A84F;
-  --color-text: #21140F;
-  --color-muted: #7A6252;
+  
+  /* Black & White */
   --color-white: #FFFFFF;
-  --color-black: #080403;
+  --color-black: #0F0C0A;
+
+  /* Accent Red - For very minimal small detail highlights */
+  --color-accent-red: #C41E1E;
+  --color-accent-red-bright: #E52E2E;
+  --color-accent-red-dark: #8B0000;
+
   --font-display: 'Lora', Georgia, "Times New Roman", serif;
   --font-body: 'Inter', "Segoe UI", sans-serif;
   --container: 1200px;
@@ -26,9 +40,9 @@
   --radius-md: 16px;
   --radius-lg: 26px;
   --radius-xl: 40px;
-  --shadow-soft: 0 18px 52px rgba(58, 30, 20, .08);
-  --shadow-card: 0 14px 34px rgba(58, 30, 20, .07);
-  --shadow-raised: 0 22px 54px rgba(33, 20, 15, .16);
+  --shadow-soft: 0 18px 52px rgba(8, 4, 3, .08);
+  --shadow-card: 0 14px 34px rgba(8, 4, 3, .07);
+  --shadow-raised: 0 22px 54px rgba(8, 4, 3, .16);
   --border: 1px solid rgba(184, 137, 53, .22);
   --transition: 300ms ease;
 }
@@ -89,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-red);
+  color: var(--color-gold);
 }
 
 button,
@@ -278,7 +292,7 @@ table {
   flex-wrap: wrap;
   gap: 10px;
   width: fit-content;
-  color: var(--color-red);
+  color: var(--color-gold);
   font-size: .73rem;
   font-weight: 700;
   letter-spacing: .2em;
@@ -388,7 +402,7 @@ table {
 .btn--primary {
   color: var(--color-white);
   background: var(--color-red);
-  box-shadow: 0 12px 25px rgba(169, 15, 15, .2);
+  box-shadow: 0 12px 25px rgba(184, 137, 53, .2);
 }
 
 .btn--primary:hover {
@@ -398,12 +412,12 @@ table {
 
 .btn--outline {
   color: var(--color-red);
-  border-color: rgba(169, 15, 15, .38);
+  border-color: rgba(184, 137, 53, .38);
   background: transparent;
 }
 
 .btn--outline:hover {
-  background: rgba(169, 15, 15, .06);
+  background: rgba(184, 137, 53, .06);
 }
 
 .btn--cream {
@@ -430,7 +444,7 @@ table {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-red);
+  color: var(--color-gold);
   font-size: .92rem;
   font-weight: 700;
 }
@@ -586,7 +600,7 @@ table {
 
 .lang-option:hover, .lang-option.active {
   background: rgba(184, 137, 53, 0.08);
-  color: var(--color-red);
+  color: var(--color-gold);
 }
 
 
@@ -747,14 +761,14 @@ table {
 }
 
 .fullscreen-menu .menu-nav a:hover {
-  color: var(--color-red);
-  border-color: var(--color-red);
+  color: var(--color-gold);
+  border-color: var(--color-gold);
   padding-left: 6px;
 }
 
 .fullscreen-menu .menu-nav a.active {
-  color: var(--color-red);
-  border-color: var(--color-red);
+  color: var(--color-gold);
+  border-color: var(--color-gold);
   font-weight: 650;
 }
 
@@ -1956,7 +1970,7 @@ table {
 }
 
 .store-card.is-featured {
-  border-color: rgba(169, 15, 15, .32);
+  border-color: rgba(184, 137, 53, .32);
 }
 
 .store-card__meta {
@@ -2236,7 +2250,7 @@ table {
   height: 100vh;
   height: 100svh;
   min-height: 680px;
-  background: linear-gradient(135deg, #9c1214 0%, #4a0305 70%, #1c0001 100%);
+  background: linear-gradient(135deg, #1C1917 0%, #0F0C0A 70%, #000000 100%);
   color: var(--color-cream);
   overflow: hidden;
   display: flex;
@@ -2968,7 +2982,7 @@ table {
 /* ----------------------------------- */
 
 .page-hero--tnl-brand {
-  background-color: var(--color-red-dark); /* Deep Red */
+  background-color: var(--color-black); /* Black */
   background-image: radial-gradient(rgba(184, 137, 53, 0.45) 1px, transparent 1px); /* Gold halftone */
   background-size: 24px 24px;
   background-position: center bottom;
@@ -2980,7 +2994,7 @@ table {
   overflow: hidden;
 }
 
-/* Fade out the dots at the top so it's solid red behind the text and header */
+/* Fade out the dots at the top so it's solid black behind the text and header */
 .page-hero--tnl-brand::before {
   content: "";
   position: absolute;
@@ -2988,7 +3002,7 @@ table {
   left: 0;
   right: 0;
   height: 70%;
-  background: linear-gradient(to bottom, var(--color-red-dark) 0%, var(--color-red-dark) 60%, transparent 100%);
+  background: linear-gradient(to bottom, var(--color-black) 0%, var(--color-black) 60%, transparent 100%);
   z-index: 0;
 }
 
@@ -3392,7 +3406,7 @@ table {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: var(--color-red);
+  color: var(--color-gold);
   margin-bottom: 24px;
   font-weight: 600;
   position: relative;
@@ -3404,7 +3418,7 @@ table {
   left: calc(100% + 15px);
   width: 40px;
   height: 1px;
-  background-color: var(--color-red);
+  background-color: var(--color-gold);
 }
 .zen-title {
   font-family: var(--font-display);
@@ -3443,7 +3457,7 @@ table {
   border-radius: 4px;
   font-weight: 600;
   letter-spacing: 1px;
-  box-shadow: 0 10px 20px rgba(169, 15, 15, 0.2);
+  box-shadow: 0 10px 20px rgba(184, 137, 53, 0.2);
   transition: all 0.3s ease;
   border: none;
   display: inline-block;
@@ -3451,7 +3465,7 @@ table {
 }
 .btn--red-glow:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(169, 15, 15, 0.4);
+  box-shadow: 0 15px 30px rgba(184, 137, 53, 0.4);
 }
 
 /* 2. PILLARS - STAGGERED ARCHITECTURE */
@@ -3678,7 +3692,7 @@ table {
 .zen-field textarea:focus {
   outline: none;
   border-color: var(--color-red);
-  box-shadow: 0 0 0 3px rgba(169, 15, 15, 0.1);
+  box-shadow: 0 0 0 3px rgba(184, 137, 53, 0.1);
 }
 .zen-field select option {
   background: var(--color-white);
@@ -3750,7 +3764,7 @@ table {
 .btn-exclusive:hover {
   background: var(--color-red-dark);
   color: var(--color-white);
-  box-shadow: 0 10px 24px rgba(169, 15, 15, 0.2);
+  box-shadow: 0 10px 24px rgba(184, 137, 53, 0.2);
 }
 
 .partners-hero__eyebrow {
@@ -3796,8 +3810,8 @@ table {
   max-width: 1000px;
   max-height: 1000px;
   border-radius: 50%;
-  border: 1px solid rgba(169, 15, 15, 0.15);
-  background: radial-gradient(circle, rgba(169, 15, 15, 0.05) 0%, transparent 60%);
+  border: 1px solid rgba(184, 137, 53, 0.15);
+  background: radial-gradient(circle, rgba(184, 137, 53, 0.05) 0%, transparent 60%);
   animation: slowPulse 8s ease-in-out infinite alternate;
 }
 @keyframes slowPulse {
@@ -3893,12 +3907,12 @@ table {
   position: relative;
   padding: 30px;
   background: var(--color-cream);
-  border: 1px solid rgba(169, 15, 15, 0.1);
+  border: 1px solid rgba(184, 137, 53, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .pillar-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(169, 15, 15, 0.1);
+  box-shadow: 0 15px 30px rgba(184, 137, 53, 0.1);
 }
 .pillar-card--offset {
   margin-top: 30px;
@@ -3911,12 +3925,12 @@ table {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1;
-  color: rgba(169, 15, 15, 0.05);
+  color: rgba(184, 137, 53, 0.05);
   pointer-events: none;
   transition: color 0.4s;
 }
 .pillar-card:hover .pillar-card__bg-number {
-  color: rgba(169, 15, 15, 0.1);
+  color: rgba(184, 137, 53, 0.1);
 }
 .pillar-card__title {
   font-family: var(--font-display);
@@ -4056,7 +4070,7 @@ table {
   padding: 120px 0;
   background: var(--color-beige);
   position: relative;
-  background-image: radial-gradient(rgba(169, 15, 15, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(184, 137, 53, 0.05) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 .partners-vip-portal__inner {
@@ -4167,7 +4181,7 @@ table {
   left: 0;
   width: 100%;
   height: 1px;
-  background: rgba(169, 15, 15, 0.2);
+  background: rgba(184, 137, 53, 0.2);
 }
 .exclusive-form__border::after {
   content: '';
@@ -4329,3 +4343,4 @@ body.splash-revealed .page-main {
   opacity: 1;
   transform: translateY(0);
 }
+

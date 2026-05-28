@@ -20,7 +20,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(30, 15, 10, 0.95) 0%, rgba(30, 15, 10, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(8, 4, 3, 0.95) 0%, rgba(8, 4, 3, 0.8) 100%);
   z-index: 1;
 }
 /* Subtle red glow */
@@ -28,7 +28,7 @@ body {
   content: '';
   position: absolute;
   top: 0; right: 0; bottom: 0; width: 50%;
-  background-image: radial-gradient(circle at 80% 50%, rgba(248, 48, 68, 0.15) 0%, transparent 70%);
+  background-image: radial-gradient(circle at 80% 50%, rgba(184, 137, 53, 0.15) 0%, transparent 70%);
   z-index: 2;
   pointer-events: none;
 }

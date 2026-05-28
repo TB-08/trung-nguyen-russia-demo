@@ -169,7 +169,7 @@
   }
 
   .header-primary a.active {
-    color: var(--color-red);
+    color: var(--color-gold);
   }
 
   .site-header--overlay:not(.is-scrolled) .header-primary a.active {
