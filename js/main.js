@@ -112,6 +112,29 @@
     });
   }
 
+  function initLogoSplash() {
+    var splash = document.getElementById("logo-splash");
+    if (!splash) return;
+
+    var hasPlayed = sessionStorage.getItem("logo-splash-played");
+    if (hasPlayed) {
+      splash.style.display = "none";
+      splash.classList.add("is-hidden");
+      document.body.classList.remove("splash-active");
+      document.body.classList.add("splash-revealed");
+      return;
+    }
+
+    document.body.classList.add("splash-active");
+
+    setTimeout(function () {
+      splash.classList.add("is-hidden");
+      document.body.classList.remove("splash-active");
+      document.body.classList.add("splash-revealed");
+      sessionStorage.setItem("logo-splash-played", "true");
+    }, 2500);
+  }
+
   window.showDemoToast = function (message) {
     var toast = document.querySelector("[data-toast]");
     if (!toast) return;
@@ -145,6 +168,7 @@
   markCurrentNavigation();
   initReveal();
   initSmoothAnchors();
+  initLogoSplash();
 
   // Load and initialize Lenis for smooth mouse scroll UX
   var lenisScript = document.createElement("script");

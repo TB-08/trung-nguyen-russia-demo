@@ -4169,3 +4169,104 @@ table {
     font-size: 2.5rem;
   }
 }
+
+/* Premium Logo Splash Screen */
+.logo-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #080403;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+              visibility 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.logo-splash__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(380px, 80vw);
+  perspective: 1000px;
+}
+
+.logo-splash__logo {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: scale(0.8) translateZ(-50px);
+  filter: drop-shadow(0 0 0px rgba(184, 137, 53, 0));
+  animation: splashLogoIn 2.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.logo-splash__glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(184, 137, 53, 0.3) 0%, rgba(184, 137, 53, 0) 70%);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(20px);
+  animation: splashGlowIn 2.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  pointer-events: none;
+}
+
+@keyframes splashLogoIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateZ(-50px);
+    filter: drop-shadow(0 0 0px rgba(184, 137, 53, 0));
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    filter: drop-shadow(0 0 25px rgba(184, 137, 53, 0.55));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+    filter: drop-shadow(0 4px 15px rgba(184, 137, 53, 0.3));
+  }
+}
+
+@keyframes splashGlowIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+.logo-splash.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body.splash-active {
+  overflow: hidden !important;
+}
+
+body.splash-active .page-main {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+body.splash-revealed .page-main {
+  opacity: 1;
+  transform: translateY(0);
+}
