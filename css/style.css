@@ -2373,7 +2373,7 @@ table {
 }
 
 .hero-split__copy--minimal .hero-split__title {
-  font-size: clamp(5rem, 9vw, 7.5rem);
+  font-size: clamp(5.3rem, 9.5vw, 8rem);
   line-height: 1.05;
   color: #fce2a6;
   background: none;
