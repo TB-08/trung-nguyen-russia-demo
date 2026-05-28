@@ -1,125 +1,1375 @@
 <!doctype html>
-<html lang="vi">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Câu chuyện cà phê | Trung Nguyên Legend</title>
-  <meta name="description" content="Khám phá Buôn Ma Thuột, Robusta Việt Nam, quy trình cà phê và triết lý Coffee Tao của Trung Nguyên Legend.">
-  <meta property="og:title" content="Câu chuyện cà phê Việt Nam | Trung Nguyên Legend">
-  <meta property="og:description" content="Cội nguồn Robusta Việt Nam và hành trình từ hạt cà phê đến trải nghiệm năng lượng.">
+  <title>История кофе | Trung Nguyen Legend</title>
+  <meta name="description" content="Откройте для себя Буон-Ма-Тхуот, вьетнамскую робусту, кофейные процессы и философию Кофейного Дао от Trung Nguyen Legend.">
+  <meta property="og:title" content="История вьетнамского кофе | Trung Nguyen Legend">
+  <meta property="og:description" content="Истоки вьетнамского Robusta и путь от кофейного зерна до энергетического опыта.">
   <meta property="og:type" content="article">
   <meta property="og:image" content="assets/images/origin-buon-ma-thuot.svg">
   <link rel="canonical" href="https://ru.trungnguyenlegend.example/coffee-story.html">
-  <!-- TODO: Cấu hình Yandex.Webmaster và IndexNow trên website chính thức. -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
+  <style>
+    /* =========================================================
+       SLAVIC AVANT-GARDE EDITORIAL DESIGN (COFFEE-STORY)
+       ========================================================= */
+    :root {
+      --sa-padding: 140px 0;
+    }
+    
+    /* NAV ANIMATED UNDERLINE */
+    .header-primary a {
+      position: relative;
+    }
+    .header-primary a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-red);
+      transition: width 0.3s ease;
+    }
+    .header-primary a:hover::after {
+      width: 100%;
+    }
+
+    /* SCROLL REVEAL ANIMATIONS */
+    .sa-reveal {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .sa-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 1. HERO SECTION (ZEN SIGNATURE REDESIGN) */
+    .sa-hero {
+      position: relative;
+      height: 100vh;
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background-color: var(--color-cream);
+    }
+    
+    /* Zen Energy Circles */
+    .sa-hero::before {
+      content: '';
+      position: absolute;
+      right: -20vh;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120vh;
+      height: 120vh;
+      border: 1px solid rgba(58, 30, 20, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .sa-hero::after {
+      content: '';
+      position: absolute;
+      right: -10vh;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100vh;
+      height: 100vh;
+      border: 40px solid var(--color-brown);
+      border-radius: 50%;
+      opacity: 0.05;
+      z-index: 0;
+      animation: spinZen 60s linear infinite;
+    }
+    @keyframes spinZen {
+      from { transform: translateY(-50%) rotate(0deg); }
+      to { transform: translateY(-50%) rotate(360deg); }
+    }
+
+    .sa-hero-container {
+      display: flex;
+      width: 100%;
+      max-width: var(--container-wide);
+      margin: -15vh auto 0; /* Shift text & image up further */
+      padding: 0 40px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .sa-hero-content {
+      width: 55%;
+      position: relative;
+      z-index: 3;
+      padding-right: 40px;
+    }
+    
+    /* Accent Line */
+    .sa-hero-content::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 10px;
+      height: 85%;
+      width: 4px;
+      background: var(--color-red);
+    }
+
+    .sa-ghost-number {
+      position: absolute;
+      top: -80px;
+      left: -20px;
+      font-family: var(--font-display);
+      font-size: 18rem;
+      font-weight: 700;
+      color: rgba(58, 30, 20, 0.04);
+      line-height: 1;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .sa-hero-content .eyebrow {
+      display: inline-block;
+      color: var(--color-white);
+      background-color: var(--color-red);
+      padding: 6px 16px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-size: 0.85rem;
+    }
+
+    .sa-hero-content h1 {
+      font-family: var(--font-display);
+      font-size: 5.5rem;
+      line-height: 1.05;
+      color: var(--color-brown);
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+    .sa-hero-content h1 span {
+      display: block;
+      color: var(--color-red);
+      font-style: italic;
+    }
+
+    .sa-hero-content .lead {
+      font-size: 1.35rem;
+      color: var(--color-muted);
+      max-width: 90%;
+      line-height: 1.8;
+      border-top: 1px solid rgba(58, 30, 20, 0.2);
+      padding-top: 30px;
+    }
+
+    .sa-hero-visual {
+      position: absolute;
+      right: -5%;
+      top: 25%; /* Shifted image up significantly */
+      transform: translateY(-50%);
+      width: 55%;
+      z-index: 1;
+    }
+    .sa-hero-visual img {
+      width: 100%;
+      border-radius: 24px; /* Added elegant rounded corners for the real photo */
+      filter: drop-shadow(-30px 50px 80px rgba(0,0,0,0.2));
+      animation: floatHero 8s ease-in-out infinite;
+    }
+    @keyframes floatHero {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Vertical Signature */
+    .sa-vertical-signature {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      transform-origin: center center;
+      text-transform: uppercase;
+      letter-spacing: 12px;
+      color: var(--color-brown);
+      font-size: 0.8rem;
+      font-weight: 600;
+      opacity: 0.4;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    /* 2. ORIGIN SECTION (MUSEUM SIGNATURE) */
+    .sa-origin {
+      background-color: var(--color-cream);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .sa-origin-grid {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      min-height: 100vh;
+    }
+    .sa-origin-image {
+      width: 52%;
+      position: relative;
+      flex-shrink: 0;
+      /* Fade ảnh ở mép PHẢI sang trong suốt → hòa vào nền bên phải */
+      -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+      mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    }
+    .sa-origin-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Label dọc bên trái ảnh */
+    .sa-origin-label {
+      position: absolute;
+      left: 28px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      transform-origin: center center;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.7);
+      white-space: nowrap;
+      z-index: 5;
+    }
+    .sa-origin-content {
+      flex: 1;
+      padding: 100px 80px 100px 60px;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sa-origin-watermark {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      font-size: 13rem;
+      font-family: var(--font-display);
+      color: rgba(58, 30, 20, 0.05);
+      z-index: -1;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .sa-origin-rule {
+      width: 60px;
+      height: 3px;
+      background-color: var(--color-red);
+      margin: 0 0 28px 0;
+      border-radius: 2px;
+    }
+    .sa-origin-content .eyebrow {
+      color: var(--color-red);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.8rem;
+      display: block;
+      margin-bottom: 18px;
+    }
+    .sa-origin-content h2 {
+      font-family: var(--font-display);
+      font-size: 3.2rem;
+      color: var(--color-brown);
+      margin-bottom: 36px;
+      line-height: 1.2;
+    }
+    .sa-origin-content p {
+      color: var(--color-muted);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      margin-bottom: 18px;
+      max-width: 480px;
+    }
+
+    /* 3. INFOGRAPHIC COMPARISON SECTION */
+    .sa-table-section {
+      background-color: var(--color-cream);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .sa-table-section::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(to right, transparent, rgba(58,30,20,0.08), transparent);
+    }
+    .sa-table-section .section-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .sa-table-section .eyebrow {
+      color: var(--color-red);
+      display: inline-block;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .sa-table-section h2 {
+      color: var(--color-brown);
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .sa-table-section .section-heading p {
+      color: var(--color-muted);
+      font-size: 0.98rem;
+      max-width: 460px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* INFOGRAPHIC WRAPPER */
+    .sa-infographic {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 0;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: stretch;
+    }
+
+    /* VS divider */
+    .sa-infographic-divider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 28px;
+      gap: 16px;
+    }
+    .sa-infographic-divider .vs-line {
+      flex: 1;
+      width: 1px;
+      background: rgba(58,30,20,0.1);
+    }
+    .sa-infographic-divider .vs-badge {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: rgba(58,30,20,0.3);
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+
+    /* INFOGRAPHIC CARD */
+    .sa-info-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid rgba(58,30,20,0.07);
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(58,30,20,0.06);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Card Header */
+    .sa-info-card__head {
+      padding: 24px 32px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      border-bottom: 1px solid rgba(58,30,20,0.06);
+    }
+    .sa-info-card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .sa-info-card--robusta .sa-info-card__icon {
+      background: rgba(188,99,42,0.12);
+    }
+    .sa-info-card--arabica .sa-info-card__icon {
+      background: rgba(100,130,90,0.1);
+    }
+    .sa-info-card__label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .sa-info-card--robusta .sa-info-card__label { color: #bc632a; }
+    .sa-info-card--arabica .sa-info-card__label { color: #647855; }
+    .sa-info-card__name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--color-brown);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .sa-info-card__origin {
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      margin-top: 2px;
+    }
+
+    /* Strength bar */
+    .sa-info-card__strength {
+      padding: 16px 32px 0;
+    }
+    .sa-info-card__strength-label {
+      font-size: 0.67rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-muted);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .sa-strength-bar {
+      height: 4px;
+      border-radius: 4px;
+      background: rgba(58,30,20,0.07);
+      overflow: hidden;
+    }
+    .sa-strength-bar__fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 1.2s cubic-bezier(0.16,1,0.3,1);
+    }
+    .sa-info-card--robusta .sa-strength-bar__fill { background: #bc632a; width: 92%; }
+    .sa-info-card--arabica .sa-strength-bar__fill { background: #647855; width: 55%; }
+
+    /* Attribute rows */
+    .sa-info-card__body {
+      padding: 16px 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      flex: 1;
+    }
+    .sa-attr-row {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(58,30,20,0.05);
+    }
+    .sa-attr-row:last-child { border-bottom: none; }
+    .sa-attr-label {
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--color-muted);
+      margin-bottom: 2px;
+      font-weight: 600;
+    }
+    .sa-attr-value {
+      font-size: 0.95rem;
+      color: var(--color-brown);
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    /* Tag pills */
+    .sa-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .sa-tag {
+      display: inline-block;
+      padding: 4px 11px;
+      border-radius: 40px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    .sa-info-card--robusta .sa-tag {
+      background: rgba(188,99,42,0.08);
+      color: #9e4e1a;
+      border: 1px solid rgba(188,99,42,0.15);
+    }
+    .sa-info-card--arabica .sa-tag {
+      background: rgba(100,130,90,0.07);
+      color: #4a6040;
+      border: 1px solid rgba(100,130,90,0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .sa-infographic {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .sa-infographic-divider {
+        flex-direction: row;
+        padding: 0;
+        height: 40px;
+      }
+      .sa-infographic-divider .vs-line {
+        flex: 1; width: auto; height: 1px;
+      }
+      .sa-infographic-divider .vs-badge {
+        writing-mode: horizontal-tb;
+        font-size: 0.65rem;
+      }
+    }
+
+    /* 4. PROCESS SECTION — EDITORIAL NUMBERED ROWS */
+    .sa-process {
+      background-color: var(--color-cream);
+      padding: 0;
+      position: relative;
+    }
+
+    /* Dark header banner */
+    .sa-process-header {
+      background-color: var(--color-brown);
+      padding: 100px 40px;
+      text-align: center;
+    }
+    .sa-process-header .eyebrow {
+      display: inline-block;
+      color: var(--color-red);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .sa-process-header h2 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--color-white);
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .sa-process-header p {
+      color: rgba(255,255,255,0.6);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Progress dots */
+    .sa-process-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 40px;
+    }
+    .sa-process-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+    }
+    .sa-process-dot.active {
+      background: var(--color-red);
+      width: 24px;
+      border-radius: 3px;
+    }
+
+    /* Steps list */
+    .sa-steps-list {
+      max-width: 1200px;
+      margin: -60px auto 100px;
+      padding: 60px;
+      background-color: #fff;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(58,30,20,0.04);
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Each row */
+    .sa-step-row {
+      display: grid;
+      grid-template-columns: 120px 1.5fr 1fr;
+      align-items: center;
+      gap: 0 50px;
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(58,30,20,0.06);
+      position: relative;
+      cursor: default;
+      transition: all 0.4s ease;
+    }
+    .sa-step-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .sa-step-row::before {
+      content: '';
+      position: absolute;
+      left: -60px; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--color-red);
+      transform: scaleY(0);
+      transform-origin: center;
+      transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+    }
+    .sa-step-row:hover::before { transform: scaleY(1); }
+    .sa-step-row:hover { transform: translateX(10px); }
+    .sa-step-row:first-child { padding-top: 0; }
+
+    /* Number */
+    .sa-step-n {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .sa-step-n__ghost {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 0.9;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(58,30,20,0.15);
+      transition: all 0.4s ease;
+    }
+    .sa-step-row:hover .sa-step-n__ghost {
+      -webkit-text-stroke: 1px var(--color-red);
+      color: rgba(248,48,68,0.05);
+    }
+    .sa-step-n__badge {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 600;
+      color: var(--color-brown);
+      opacity: 0.8;
+      border-bottom: 1px solid var(--color-red);
+      padding-bottom: 4px;
+    }
+
+    /* Left content: icon + title */
+    .sa-step-left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .sa-step-ico {
+      width: 60px;
+      height: 60px;
+      border: 1px solid rgba(58,30,20,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-brown);
+      flex-shrink: 0;
+      transition: all 0.4s ease;
+      background-color: transparent;
+    }
+    .sa-step-row:hover .sa-step-ico {
+      border-color: var(--color-red);
+      color: var(--color-red);
+      background-color: rgba(248,48,68,0.03);
+    }
+    .sa-step-ico svg {
+      width: 26px;
+      height: 26px;
+      stroke-width: 1.2px;
+    }
+    
+    .sa-step-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--color-brown);
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+      transition: color 0.4s ease;
+    }
+    .sa-step-row:hover .sa-step-title {
+      color: var(--color-red);
+    }
+    .sa-step-cat {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--color-muted);
+      font-weight: 600;
+    }
+
+    /* Right content: description */
+    .sa-step-desc {
+      font-size: 1.05rem;
+      color: var(--color-muted);
+      line-height: 1.7;
+    }
+
+    /* GHOST STEP — hidden legacy */
+    .sa-ghost-step, .sa-step, .sa-timeline, .sa-stepper,
+    .sa-step-item, .sa-step-num, .sa-step-card, .sa-step-icon {
+      /* legacy classes – kept for selector compat */
+    }
+
+    /* Responsive process */
+    @media (max-width: 768px) {
+      .sa-process-header { padding: 60px 20px 100px; }
+      .sa-steps-list { margin: -60px 20px 60px; padding: 40px 20px; border-radius: 16px; }
+      .sa-step-row { grid-template-columns: 1fr; gap: 20px; padding: 30px 0; }
+      .sa-step-row:hover { transform: none; }
+      .sa-step-row::before { left: -20px; }
+      .sa-step-desc { margin-top: 10px; }
+    }
+
+    /* 5. COFFEE TAO SECTION */
+    .sa-tao {
+      background-color: var(--color-cream);
+      padding: 160px 0;
+      border-top: 1px solid rgba(58,30,20,0.05);
+    }
+    .sa-tao-grid {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .sa-quote-col {
+      width: 65%;
+      position: relative;
+    }
+    .sa-quote-mark {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 22rem;
+      color: var(--color-red);
+      position: absolute;
+      top: -120px;
+      left: -60px;
+      line-height: 0.8;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    .sa-quote-col blockquote {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--color-brown);
+      line-height: 1.15;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+      letter-spacing: -1.5px;
+    }
+    .sa-quote-col blockquote span {
+      font-style: italic;
+      color: var(--color-red);
+    }
+    .sa-sidebar-col {
+      width: 35%;
+      border-left: 2px solid var(--color-red);
+      padding-left: 50px;
+      position: relative;
+    }
+    .sa-sidebar-col::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: -6px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--color-red);
+      border-radius: 50%;
+    }
+    .sa-sidebar-col .eyebrow {
+      color: var(--color-brown);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sa-sidebar-col .eyebrow::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background-color: var(--color-red);
+    }
+    .sa-sidebar-col p {
+      color: var(--color-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .sa-sidebar-col p:last-child {
+      margin-bottom: 0;
+    }
+    
+    /* 6. CTA SECTION */
+    .sa-cta {
+      background-color: var(--color-beige);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .sa-cta-inner {
+      padding: 100px 0;
+      position: relative;
+      z-index: 2;
+      max-width: var(--container-wide);
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sa-cta-content {
+      width: 50%;
+    }
+    .sa-cta-visual {
+      width: 45%;
+      position: relative;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+    }
+    .sa-cta-visual img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+      transform: translateY(-20px);
+    }
+    .sa-cta .eyebrow { color: var(--color-red); display: block; margin-bottom:15px; text-transform: uppercase; letter-spacing: 2px; }
+    .sa-cta h2 { color: var(--color-brown); font-size: 3.5rem; font-family: var(--font-display); margin-bottom: 20px; }
+    .sa-cta p { color: var(--color-muted); font-size: 1.2rem; margin-bottom: 40px; }
+    .sa-diagonal {
+      position: absolute;
+      right: 15%;
+      top: -50%;
+      bottom: -50%;
+      width: 1px;
+      background-color: rgba(58, 30, 20, 0.1);
+      transform: rotate(25deg);
+      z-index: 1;
+    }
+    
+    /* 7. EDITORIAL FOOTER (REMOVED) */
+    
+    /* RESPONSIVE */
+    @media (max-width: 991px) {
+      /* Hero */
+      .sa-hero-content { width: 100%; padding-right: 0; }
+      .sa-hero-content::before { display: none; }
+      .sa-hero-visual { display: none; }
+      .sa-hero-content h1 { font-size: 3.5rem; }
+      .sa-vertical-signature { display: none; }
+
+      /* Origin */
+      .sa-origin-grid { flex-direction: column; min-height: auto; }
+      .sa-origin-image {
+        width: 100%;
+        height: 60vw;
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+      }
+      .sa-origin-label { display: none; }
+      .sa-origin-content {
+        width: 100%;
+        padding: 50px 30px;
+      }
+      .sa-origin-content h2 { font-size: 2rem; }
+      .sa-origin-watermark { font-size: 7rem; }
+
+      /* Others */
+      .sa-timeline { flex-direction: column; margin-top: 40px; padding: 0 20px; }
+      .sa-timeline::before { display: none; }
+      .sa-step { width: 100%; margin: 0 0 20px 0 !important; }
+      .sa-tao-grid { flex-direction: column; gap: 40px; padding: 0 20px;}
+      .sa-quote-col { width: 100%; }
+      .sa-quote-col blockquote { font-size: 2rem; }
+      .sa-sidebar-col { width: 100%; border-left: none; border-top: 1px solid rgba(58,30,20,0.2); padding-left: 0; padding-top: 40px; }
+      .sa-cta p { max-width: 100%; }
+      .sa-cta-inner, .sa-table-section .container--wide { padding: 0 20px; }
+      .sa-cta h2 { font-size: 2.2rem; }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Bỏ qua đến nội dung</a>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  
   <header class="site-header" data-header>
     <div class="container--wide header-inner">
-      <nav class="header-primary" aria-label="Điều hướng chính"><a data-page="products.html" href="products.html">Sản phẩm</a><a data-page="partners.html" href="partners.html">Đối tác/NPP</a><a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a></nav>
-      <a class="brand-logo" href="index.html" aria-label="Trung Nguyên Legend - Trang chủ"><img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyên Legend"></a>
-      <div class="header-actions"><a class="header-find" href="where-to-buy.html">Tìm điểm bán</a><button class="menu-toggle" type="button" data-menu-open aria-label="Mở danh mục điều hướng"><span>Menu</span><span class="hamburger" aria-hidden="true"></span></button></div>
+      <nav class="header-primary" aria-label="Главная навигация">
+        <a data-page="products.html" href="products.html">Продукты</a>
+        <a data-page="partners.html" href="partners.html">Партнёрам</a>
+        <a data-page="coffee-story.html" href="coffee-story.html">История кофе</a>
+      <a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a>
+      </nav>
+      <a class="brand-logo" href="index.html" aria-label="Trung Nguyen Legend - Главная"><img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyen Legend"></a>
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-current" type="button" aria-haspopup="listbox" aria-expanded="false">
+            RU
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <a href="#" class="lang-option active" role="option">RU - Русский</a>
+            <a href="#" class="lang-option" role="option">EN - English</a>
+            </div>
+        </div>
+        <button class="menu-toggle" type="button" data-menu-open aria-label="Открыть навигационное меню"><span>Menu</span><span class="hamburger" aria-hidden="true"></span></button>
+      </div>
     </div>
   </header>
-  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Danh mục điều hướng" aria-hidden="true">
+
+  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Меню навигации" aria-hidden="true">
     <div class="container--wide">
-      <div class="menu-head"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a><button class="menu-close" type="button" data-menu-close aria-label="Đóng danh mục điều hướng"></button></div>
+      <div class="menu-head">
+        <a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend"></a>
+        <button class="menu-close" type="button" data-menu-close aria-label="Закрыть навигационное меню"></button>
+      </div>
       <div class="menu-layout">
-        <nav class="menu-nav" aria-label="Danh mục đầy đủ"><a data-page="index.html" href="index.html">Trang chủ</a><a data-page="about.html" href="about.html">Về chúng tôi</a><a data-page="products.html" href="products.html">Sản phẩm</a><a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a><a data-page="partners.html" href="partners.html">Đối tác/NPP</a><a data-page="where-to-buy.html" href="where-to-buy.html">Tìm điểm bán</a><a data-page="news.html" href="news.html">Tin tức</a><a data-page="contact.html" href="contact.html">Liên hệ</a></nav>
-        <aside class="menu-aside"><span class="eyebrow">Thị trường Nga</span><h2>Kết nối cùng cà phê Việt Nam</h2><p>Tìm hiểu hương vị trước khi chọn sản phẩm hoặc trao đổi hợp tác.</p><a class="btn btn--cream" href="products.html">Xem sản phẩm</a><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></aside>
+        <nav class="menu-nav" aria-label="Полное меню">
+          <a data-page="index.html" href="index.html">Главная</a>
+          <a data-page="about.html" href="about.html">О нас</a>
+          <a data-page="products.html" href="products.html">Продукты</a>
+          <a data-page="coffee-story.html" href="coffee-story.html">История кофе</a>
+          <a data-page="partners.html" href="partners.html">Партнёрам</a>
+          <a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a>
+          <a data-page="news.html" href="news.html">Новости</a>
+          <a data-page="contact.html" href="contact.html">Контакты</a>
+        </nav>
+        <aside class="menu-aside">
+          <span class="eyebrow">Российский рынок</span>
+          <h2>Откройте для себя вьетнамский кофе</h2>
+          <p>Узнайте о вкусах перед выбором продукта или обсудите условия сотрудничества.</p>
+          <a class="btn btn--cream" href="products.html">Смотреть продукты</a>
+          <div class="social-links">
+            <a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a>
+            <a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
+
   <main id="main-content" class="page-main">
-    <section class="page-hero page-hero--with-visual">
-      <div class="container two-column">
-        <div class="section-heading"><span class="eyebrow">Di sản cà phê</span><h1>Câu chuyện cà phê Việt Nam</h1><p class="lead">Từ vùng đất Buôn Ma Thuột, hạt Robusta đậm sâu đi qua nghệ thuật rang xay để trở thành một tách cà phê giàu năng lượng và bản sắc.</p></div>
-        <figure class="page-hero__image"><img src="assets/images/coffee-craft.svg" alt="Minh họa tách cà phê Việt Nam"></figure>
+    
+    <!-- 1. HERO SECTION (ZEN SIGNATURE) -->
+    <section class="sa-hero">
+      <div class="sa-vertical-signature">Trung Nguyen Legend</div>
+      <div class="sa-hero-container">
+        <div class="sa-hero-content sa-reveal">
+          <div class="sa-ghost-number">01</div>
+          <span class="eyebrow">Кофейное наследие</span>
+          <h1>История <br>кофе <span>Вьетнам</span></h1>
+          <p class="lead">Из региона Буон-Ма-Тхуот насыщенные зёрна Robusta проходят через искусство обжарки, чтобы стать чашкой кофе, полной энергии и характера.</p>
+        </div>
+        <figure class="sa-hero-visual sa-reveal" style="transition-delay: 0.2s;">
+          <img src="assets/images/trung-nguyen-coffee-hero.png" alt="Trải nghiệm tách кофе Trung Nguyen Legend">
+        </figure>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-column">
-        <figure class="editorial-media reveal"><img src="assets/images/origin-buon-ma-thuot.svg" alt="Minh họa vùng đất Buôn Ma Thuột"></figure>
-        <div class="section-heading reveal">
-          <span class="eyebrow">Cội nguồn</span>
-          <h2>Buôn Ma Thuột - vùng đất của vị cà phê đậm</h2>
-          <p>Trong câu chuyện cà phê Việt Nam, Buôn Ma Thuột là dấu mốc về vùng nguyên liệu, văn hóa và niềm tự hào. Đây là nơi gợi mở hình ảnh của đất đỏ, khí hậu cao nguyên và những hạt cà phê mang thân vị rõ nét.</p>
-          <p>Đối với người thưởng thức quốc tế, nguồn gốc ấy tạo nên một lời giới thiệu dễ nhớ: cà phê Việt Nam có hương vị mạnh, chiều sâu và một nghi thức riêng để khám phá.</p>
+    <!-- 2. ORIGIN SECTION -->
+    <section class="sa-origin">
+      <div class="sa-origin-grid">
+        <figure class="sa-origin-image sa-reveal">
+          <span class="sa-origin-label">Буон-Ма-Тхуот · Вьетнам</span>
+          <img src="assets/images/hero-bg.png" alt="Không gian Буон-Ма-Тхуот">
+        </figure>
+        <div class="sa-origin-content sa-reveal" style="transition-delay: 0.2s;">
+          <div class="sa-origin-watermark">1996</div>
+          <div class="sa-origin-rule"></div>
+          <span class="eyebrow">Истоки</span>
+          <h2>Буон-Ма-Тхуот <br>земля крепкого кофе</h2>
+          <p>В истории вьетнамского кофе Буон-Ма-Тхуот является символом сырья, культуры и гордости. Это место ассоциируется с красной землёй, высокогорным климатом и кофейными зёрнами с выразительным вкусом.</p>
+          <p>Для международных ценителей это происхождение создаёт легко запоминающееся представление: вьетнамский кофе — это крепость, глубина и особый ритуал открытий.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section--beige">
-      <div class="container">
-        <div class="section-heading section-heading--center">
-          <span class="eyebrow">Hạt cà phê</span>
-          <h2>Robusta Việt Nam và Arabica</h2>
-          <p>Hai phong cách khác nhau tạo nên những trải nghiệm riêng. Danh mục Trung Nguyên Legend nhấn mạnh ưu thế thân vị của cà phê Việt.</p>
-        </div>
-        <div class="table-wrap reveal">
-          <table class="comparison-table">
-            <thead><tr><th>Đặc điểm</th><th>Robusta Việt Nam</th><th>Arabica</th></tr></thead>
-            <tbody>
-              <tr><th>Thân vị</th><td>Dày, mạnh, cảm giác năng lượng rõ</td><td>Nhẹ đến vừa, tinh tế</td></tr>
-              <tr><th>Hương vị gợi nhớ</th><td>Ca cao đắng, hạt rang, hậu vị sâu</td><td>Hoa, trái cây, chua thanh</td></tr>
-              <tr><th>Phong cách thưởng thức</th><td>Pha phin, cà phê đen, hòa tan đậm</td><td>Lọc giấy, pha máy nhẹ</td></tr>
-              <tr><th>Điểm khác biệt</th><td>Dấu ấn mạnh mẽ của cà phê Việt Nam</td><td>Cấu trúc hương thơm thanh thoát</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
+    <!-- 3. INFOGRAPHIC COMPARISON SECTION -->
+    <section class="sa-table-section">
       <div class="container--wide">
-        <div class="section-heading"><span class="eyebrow">Từ hạt đến tách</span><h2>Quy trình tạo nên trải nghiệm</h2><p>Mỗi bước đều góp phần bảo toàn đặc tính hương vị và tính nhất quán của sản phẩm.</p></div>
-        <div class="process-grid">
-          <article class="process-card reveal"><span class="step">1</span><h3>Chọn lọc hạt</h3><p>Xác định nguồn nguyên liệu phù hợp với phong cách vị mong muốn.</p></article>
-          <article class="process-card reveal"><span class="step">2</span><h3>Rang xay</h3><p>Phát triển hương rang, thân vị và tầng hậu vị đặc trưng.</p></article>
-          <article class="process-card reveal"><span class="step">3</span><h3>Phối trộn</h3><p>Cân bằng sắc thái cho từng dòng sản phẩm và cách pha.</p></article>
-          <article class="process-card reveal"><span class="step">4</span><h3>Đóng gói</h3><p>Tạo định dạng thuận tiện cho bán lẻ, pha máy hoặc nhỏ giọt.</p></article>
-          <article class="process-card reveal"><span class="step">5</span><h3>Kiểm soát chất lượng</h3><p>Duy trì trải nghiệm nhất quán trước khi đến điểm bán.</p></article>
+
+        <div class="section-heading section-heading--center sa-reveal">
+          <span class="eyebrow">Кофейные зёрна</span>
+          <h2>Robusta &amp; Arabica</h2>
+          <p>Два стиля, два разных опыта — линейка Trung Nguyen Legend раскрывает все преимущества тела вьетнамского кофе.</p>
+        </div>
+
+        <div class="sa-infographic sa-reveal" style="transition-delay: 0.2s;">
+
+          <!-- ROBUSTA CARD -->
+          <article class="sa-info-card sa-info-card--robusta">
+            <div class="sa-info-card__head">
+              <div class="sa-info-card__icon">☕</div>
+              <div>
+                <div class="sa-info-card__label">Вьетнам · Основной</div>
+                <div class="sa-info-card__name">Robusta</div>
+                <div class="sa-info-card__origin">Буон-Ма-Тхуот, Центральное нагорье</div>
+              </div>
+            </div>
+            <div class="sa-info-card__strength">
+              <div class="sa-info-card__strength-label">
+                <span>Крепость</span>
+                <span>92%</span>
+              </div>
+              <div class="sa-strength-bar"><div class="sa-strength-bar__fill"></div></div>
+            </div>
+            <div class="sa-info-card__body">
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Тело</span>
+                <span class="sa-attr-value">Плотное, крепкое, с выраженным энергетическим вкусом</span>
+              </div>
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Характерный вкус</span>
+                <div class="sa-tag-list">
+                  <span class="sa-tag">Горький шоколад</span>
+                  <span class="sa-tag">Обжаренное зерно</span>
+                  <span class="sa-tag">Глубокое послевкусие</span>
+                </div>
+              </div>
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Способы приготовления</span>
+                <div class="sa-tag-list">
+                  <span class="sa-tag">Pha phin</span>
+                  <span class="sa-tag">Черный кофе</span>
+                  <span class="sa-tag">Крепкий растворимый</span>
+                </div>
+              </div>
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Главное</span>
+                <span class="sa-attr-value">Крепкий характер вьетнамского кофе</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- VS DIVIDER -->
+          <div class="sa-infographic-divider">
+            <div class="vs-line"></div>
+            <div class="vs-badge">VS</div>
+            <div class="vs-line"></div>
+          </div>
+
+          <!-- ARABICA CARD -->
+          <article class="sa-info-card sa-info-card--arabica">
+            <div class="sa-info-card__head">
+              <div class="sa-info-card__icon">🌿</div>
+              <div>
+                <div class="sa-info-card__label">Импортный · Дополнительный</div>
+                <div class="sa-info-card__name">Arabica</div>
+                <div class="sa-info-card__origin">Ethiopia, Colombia, Brazil</div>
+              </div>
+            </div>
+            <div class="sa-info-card__strength">
+              <div class="sa-info-card__strength-label">
+                <span>Крепость</span>
+                <span>55%</span>
+              </div>
+              <div class="sa-strength-bar"><div class="sa-strength-bar__fill"></div></div>
+            </div>
+            <div class="sa-info-card__body">
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Тело</span>
+                <span class="sa-attr-value">От легкого до среднего, утонченный, легко пьется</span>
+              </div>
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Характерный вкус</span>
+                <div class="sa-tag-list">
+                  <span class="sa-tag">Цветы</span>
+                  <span class="sa-tag">Фрукты</span>
+                  <span class="sa-tag">Chua thanh</span>
+                </div>
+              </div>
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Способы приготовления</span>
+                <div class="sa-tag-list">
+                  <span class="sa-tag">Бумажный фильтр</span>
+                  <span class="sa-tag">Легкий эспрессо</span>
+                  <span class="sa-tag">Cold brew</span>
+                </div>
+              </div>
+              <div class="sa-attr-row">
+                <span class="sa-attr-label">Главное</span>
+                <span class="sa-attr-value">Нежный аромат, элегантная структура</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section section--brown">
-      <div class="container two-column">
-        <div class="editorial-panel reveal">
+    <!-- 4. PROCESS SECTION -->
+    <section class="sa-process">
+
+      <!-- Dark header -->
+      <div class="sa-process-header sa-reveal">
+        <span class="eyebrow">От зерна к чашке</span>
+        <h2>Процесс создания вкуса</h2>
+        <p>Каждый этап сохраняет вкусовые характеристики и стабильность продукта.</p>
+        <div class="sa-process-dots">
+          <div class="sa-process-dot active"></div>
+          <div class="sa-process-dot"></div>
+          <div class="sa-process-dot"></div>
+          <div class="sa-process-dot"></div>
+          <div class="sa-process-dot"></div>
+        </div>
+      </div>
+
+      <!-- Steps rows -->
+      <div class="sa-steps-list">
+
+        <div class="sa-step-row sa-reveal">
+          <div class="sa-step-n">
+            <span class="sa-step-n__ghost">01</span>
+            <span class="sa-step-n__badge">Шаг</span>
+          </div>
+          <div class="sa-step-left">
+            <div class="sa-step-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8c2.5 3 2.5 8 0 11s-8 2.5-11 0-2.5-8 0-11 8-2.5 11 0z"></path>
+                <path d="M15 9.5c-3 3-5 5-7.5 4.5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="sa-step-title">Выбор зерен</div>
+              <div class="sa-step-cat">Сырьевая база</div>
+            </div>
+          </div>
+          <div class="sa-step-desc">Выбор региона произрастания, сорта кофе и оптимальной зрелости зёрен для достижения нужного вкусового профиля.</div>
+        </div>
+
+        <div class="sa-step-row sa-reveal" style="transition-delay:0.08s;">
+          <div class="sa-step-n">
+            <span class="sa-step-n__ghost">02</span>
+            <span class="sa-step-n__badge">Шаг</span>
+          </div>
+          <div class="sa-step-left">
+            <div class="sa-step-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="sa-step-title">Rang xay</div>
+              <div class="sa-step-cat">Обжарка</div>
+            </div>
+          </div>
+          <div class="sa-step-desc">Раскрытие спектра ароматов при обжарке, формирование тела напитка и создание уникального послевкусия.</div>
+        </div>
+
+        <div class="sa-step-row sa-reveal" style="transition-delay:0.16s;">
+          <div class="sa-step-n">
+            <span class="sa-step-n__ghost">03</span>
+            <span class="sa-step-n__badge">Шаг</span>
+          </div>
+          <div class="sa-step-left">
+            <div class="sa-step-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="9" r="5"></circle>
+                <circle cx="8" cy="15" r="5"></circle>
+                <circle cx="16" cy="15" r="5"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="sa-step-title">Купажирование</div>
+              <div class="sa-step-cat">Баланс вкуса</div>
+            </div>
+          </div>
+          <div class="sa-step-desc">Оптимизация соотношения сортов зёрен для баланса нюансов каждого продукта и способа заваривания.</div>
+        </div>
+
+        <div class="sa-step-row sa-reveal" style="transition-delay:0.24s;">
+          <div class="sa-step-n">
+            <span class="sa-step-n__ghost">04</span>
+            <span class="sa-step-n__badge">Шаг</span>
+          </div>
+          <div class="sa-step-left">
+            <div class="sa-step-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="sa-step-title">Упаковка</div>
+              <div class="sa-step-cat">Экспортные форматы</div>
+            </div>
+          </div>
+          <div class="sa-step-desc">Создание удобных форматов — розничных пакетов, капсул, дрип-пакетов — адаптированных для международного рынка.</div>
+        </div>
+
+        <div class="sa-step-row sa-reveal" style="transition-delay:0.32s;">
+          <div class="sa-step-n">
+            <span class="sa-step-n__ghost">05</span>
+            <span class="sa-step-n__badge">Шаг</span>
+          </div>
+          <div class="sa-step-left">
+            <div class="sa-step-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="sa-step-title">Контроль качества</div>
+              <div class="sa-step-cat">Стабильность качества</div>
+            </div>
+          </div>
+          <div class="sa-step-desc">Стабильно высокое качество каждой партии гарантирует неизменный вкус от производства до полки магазина.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. COFFEE TAO SECTION -->
+    <section class="sa-tao">
+      <div class="sa-tao-grid">
+        <div class="sa-quote-col sa-reveal">
+          <div class="sa-quote-mark">&ldquo;</div>
+          <blockquote>Одна чашка насыщенного кофе может стать началом<br><span>новую идею.</span></blockquote>
+        </div>
+        <div class="sa-sidebar-col sa-reveal" style="transition-delay: 0.2s;">
           <span class="eyebrow">Coffee Tao</span>
-          <blockquote>Một tách cà phê đậm sâu có thể mở đầu cho một suy nghĩ mới.</blockquote>
-          <p>Coffee Tao là cách thương hiệu diễn giải cà phê như một trải nghiệm văn hóa: thưởng thức có chiều sâu, khơi dậy tập trung và kết nối con người với nguồn gốc của hương vị.</p>
-        </div>
-        <div class="section-heading reveal">
-          <span class="eyebrow">Cà phê năng lượng</span>
-          <h2>Triết lý được đưa vào từng lựa chọn</h2>
-          <p>Từ G7 pha nhanh đến rang xay pha phin, người tiêu dùng có thể chọn nghi thức phù hợp trong khi vẫn cảm nhận điểm chung: vị đậm, hình ảnh Việt Nam và tinh thần tự tin.</p>
-          <a class="btn btn--primary" href="products.html">Tìm sản phẩm phù hợp</a>
+          <p>Кофейное Дао — это интерпретация бренда кофе как культурного опыта: осознанное наслаждение, пробуждающее концентрацию и связывающее людей с истоками вкуса.</p>
+          <p>От быстрорастворимого G7 до заваривания молотого кофе в фине — потребители выбирают подходящий ритуал, ощущая общую нить: крепкий вкус, образ Вьетнама и дух уверенности.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container"><div class="cta-panel reveal"><div><span class="eyebrow">Bắt đầu trải nghiệm</span><h2>Chọn hương vị mang dấu ấn Việt Nam</h2><p>Khám phá danh mục theo độ đậm, cách pha và nhu cầu sử dụng.</p></div><a class="btn btn--cream" href="products.html">Tìm sản phẩm phù hợp</a></div></div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container--wide">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a><p>Demo frontend cho định hướng thương hiệu Trung Nguyên Legend tại thị trường Nga.</p><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></div>
-        <nav class="footer-column" aria-label="Khám phá"><h2>Khám phá</h2><a href="about.html">Về chúng tôi</a><a href="coffee-story.html">Câu chuyện cà phê</a><a href="news.html">Tin tức</a></nav>
-        <nav class="footer-column" aria-label="Sản phẩm"><h2>Sản phẩm</h2><a href="products.html">Danh mục sản phẩm</a><a href="where-to-buy.html">Tìm điểm bán</a><a href="product-detail.html?slug=g7-3in1">G7 3 trong 1</a></nav>
-        <nav class="footer-column" aria-label="Liên hệ"><h2>Liên hệ</h2><a href="partners.html">Đối tác/NPP</a><a href="contact.html">Gửi liên hệ</a><a href="#">Chính sách bảo mật</a></nav>
+    <!-- 6. CTA SECTION -->
+    <section class="sa-cta">
+      <div class="sa-diagonal"></div>
+      <div class="sa-cta-inner sa-reveal">
+        <div class="sa-cta-content">
+          <span class="eyebrow">Начать путь</span>
+          <h2>Выберите вкус с вьетнамской душой</h2>
+          <p>Изучите каталог по интенсивности вкуса, способу заваривания и случаю.</p>
+          <a class="btn btn--primary" href="products.html">Найти подходящий продукт</a>
+        </div>
+        <div class="sa-cta-visual">
+          <img src="assets/images/sp1.png" alt="Trung Nguyen Legend Products">
+        </div>
       </div>
-      <div class="footer-bottom"><p>Demo frontend - nội dung tiếng Việt, sẵn sàng bản địa hóa cho thị trường Nga. © <span data-year></span>.</p><div class="legal-links"><a href="#">Chính sách bảo mật</a><a href="#">Điều khoản sử dụng</a><a href="#">Cookie</a></div></div>
+    </section>
+
+  </main>
+
+  <!-- 7. ORIGINAL FOOTER -->
+  <footer class="site-footer site-footer--tnl">
+    <div class="container--wide">
+      <div class="footer-tnl-grid">
+        <!-- Cột 1: Logo và Bản quyền -->
+        <div class="footer-tnl-col-1">
+          <a class="brand-logo" href="index.html">
+            <img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend">
+          </a>
+          <div class="footer-tnl-copyright">
+            © Trung Nguyen Legend <span data-year></span>
+          </div>
+        </div>
+        
+        <!-- Cột 2: Каталог và Liên kết phụ -->
+        <div class="footer-tnl-col-2">
+          <nav class="footer-tnl-nav-primary">
+            <a href="#">Кофе G7</a>
+            <a href="#">Trung Nguyen Legend</a>
+            <a href="#">Зерновой и молотый кофе</a>
+            <a href="#">Дрип-пакеты</a>
+            <a href="#">Капсулы</a>
+          </nav>
+          
+          <div class="footer-tnl-nav-bottom">
+            <nav class="footer-tnl-nav-secondary">
+              <a href="index.html">О Trung Nguyen Legend</a>
+              <a href="partners.html">Для бизнеса</a>
+              <a href="contact.html">Связаться с нами</a>
+            </nav>
+            
+            <nav class="footer-tnl-nav-legal">
+              <a href="#">Политика обработки персональных данных</a>
+              <a href="#">Декларация о соответствии</a>
+            </nav>
+          </div>
+        </div>
+        
+        <!-- Cột 3: TMĐT và Контакты -->
+        <div class="footer-tnl-col-3">
+          <div class="footer-tnl-ecommerce">
+            <h3>Найти на маркетплейсах</h3>
+            <nav>
+              <a href="#">Ozon</a>
+              <a href="#">Yandex.Market</a>
+              <a href="#">Wildberries</a>
+              <a href="#">Komus</a>
+            </nav>
+          </div>
+          
+          <div class="footer-tnl-contact">
+            <a href="tel:+78003332255" class="phone-link">+7 800 333 22 55</a>
+            <a href="#" class="social-icon" aria-label="VKontakte">
+              <img src="assets/icons/vk.svg" alt="VK" width="24" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
+
   <div class="toast" data-toast role="status" aria-live="polite"></div>
-  <!-- TODO: Tích hợp Yandex.Metrica khi triển khai chính thức. -->
   <script src="js/main.js"></script>
+  
+  <!-- IntersectionObserver for Reveal Animations -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if(entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              // Tùy chọn: observer.unobserve(entry.target) nếu chỉ muốn hiệu ứng 1 lần
+            }
+          });
+        }, { threshold: 0.15 });
+        
+        document.querySelectorAll('.sa-reveal').forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        // Fallback for browsers without IntersectionObserver
+        document.querySelectorAll('.sa-reveal').forEach(function(el) {
+          el.classList.add('is-visible');
+        });
+      }
+    });
+  </script>
 </body>
 </html>

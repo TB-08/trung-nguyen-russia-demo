@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="vi">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chi tiết sản phẩm | Trung Nguyên Legend</title>
-  <meta name="description" content="Thông tin hương vị, cách pha và điểm bán dành cho sản phẩm Trung Nguyên Legend.">
-  <meta property="og:title" content="Chi tiết sản phẩm | Trung Nguyên Legend">
-  <meta property="og:description" content="Khám phá trải nghiệm cà phê Việt Nam và tìm điểm bán phù hợp.">
+  <title>Детали продукта | Trung Nguyen Legend</title>
+  <meta name="description" content="Информация о вкусах, способах заваривания и точках продаж продукции Trung Nguyen Legend.">
+  <meta property="og:title" content="Детали продукта | Trung Nguyen Legend">
+  <meta property="og:description" content="Откройте для себя вкус вьетнамского кофе и найдите подходящую точку продаж.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/products/g7-3in1.svg">
   <link rel="canonical" href="https://ru.trungnguyenlegend.example/product-detail.html">
@@ -16,33 +16,92 @@
   <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Bỏ qua đến nội dung</a>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
   <header class="site-header" data-header>
     <div class="container--wide header-inner">
-      <nav class="header-primary" aria-label="Điều hướng chính"><a data-page="products.html" href="products.html">Sản phẩm</a><a data-page="partners.html" href="partners.html">Đối tác/NPP</a><a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a></nav>
-      <a class="brand-logo" href="index.html" aria-label="Trung Nguyên Legend - Trang chủ"><img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyên Legend"></a>
-      <div class="header-actions"><a class="header-find" href="where-to-buy.html">Tìm điểm bán</a><button class="menu-toggle" type="button" data-menu-open aria-label="Mở danh mục điều hướng"><span>Menu</span><span class="hamburger" aria-hidden="true"></span></button></div>
+      <nav class="header-primary" aria-label="Главная навигация"><a data-page="products.html" href="products.html">Продукты</a><a data-page="partners.html" href="partners.html">Партнёрам</a><a data-page="coffee-story.html" href="coffee-story.html">История кофе</a><a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a>
+      </nav>
+      <a class="brand-logo" href="index.html" aria-label="Trung Nguyen Legend - Главная"><img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyen Legend"></a>
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-current" type="button" aria-haspopup="listbox" aria-expanded="false">
+            RU
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <a href="#" class="lang-option active" role="option">RU - Русский</a>
+            <a href="#" class="lang-option" role="option">EN - English</a>
+            </div>
+        </div><button class="menu-toggle" type="button" data-menu-open aria-label="Открыть навигационное меню"><span>Menu</span><span class="hamburger" aria-hidden="true"></span></button></div>
     </div>
   </header>
-  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Danh mục điều hướng" aria-hidden="true">
+  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Меню навигации" aria-hidden="true">
     <div class="container--wide">
-      <div class="menu-head"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a><button class="menu-close" type="button" data-menu-close aria-label="Đóng danh mục điều hướng"></button></div>
+      <div class="menu-head"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend"></a><button class="menu-close" type="button" data-menu-close aria-label="Закрыть навигационное меню"></button></div>
       <div class="menu-layout">
-        <nav class="menu-nav" aria-label="Danh mục đầy đủ"><a data-page="index.html" href="index.html">Trang chủ</a><a data-page="about.html" href="about.html">Về chúng tôi</a><a data-page="products.html" href="products.html">Sản phẩm</a><a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a><a data-page="partners.html" href="partners.html">Đối tác/NPP</a><a data-page="where-to-buy.html" href="where-to-buy.html">Tìm điểm bán</a><a data-page="news.html" href="news.html">Tin tức</a><a data-page="contact.html" href="contact.html">Liên hệ</a></nav>
-        <aside class="menu-aside"><span class="eyebrow">Sản phẩm</span><h2>Tìm nơi trải nghiệm</h2><p>Tra cứu điểm bán mẫu hoặc trao đổi nhu cầu phân phối cho danh mục Trung Nguyên Legend.</p><a class="btn btn--cream" href="where-to-buy.html">Tìm điểm bán</a><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></aside>
+        <nav class="menu-nav" aria-label="Полное меню"><a data-page="index.html" href="index.html">Главная</a><a data-page="about.html" href="about.html">О нас</a><a data-page="products.html" href="products.html">Продукты</a><a data-page="coffee-story.html" href="coffee-story.html">История кофе</a><a data-page="partners.html" href="partners.html">Партнёрам</a><a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a><a data-page="news.html" href="news.html">Новости</a><a data-page="contact.html" href="contact.html">Контакты</a></nav>
+        <aside class="menu-aside"><span class="eyebrow">Продукты</span><h2>Найти точку продаж</h2><p>Поиск демонстрационных точек продаж или обсуждение дистрибуции ассортимента Trung Nguyen Legend.</p><a class="btn btn--cream" href="where-to-buy.html">Найти точку продаж</a><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></aside>
       </div>
     </div>
   </div>
   <main id="main-content" class="page-main" data-product-detail></main>
-  <footer class="site-footer">
+  <footer class="site-footer site-footer--tnl">
     <div class="container--wide">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a><p>Demo frontend cho định hướng thương hiệu Trung Nguyên Legend tại thị trường Nga.</p><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></div>
-        <nav class="footer-column" aria-label="Khám phá"><h2>Khám phá</h2><a href="about.html">Về chúng tôi</a><a href="coffee-story.html">Câu chuyện cà phê</a><a href="news.html">Tin tức</a></nav>
-        <nav class="footer-column" aria-label="Sản phẩm"><h2>Sản phẩm</h2><a href="products.html">Danh mục sản phẩm</a><a href="where-to-buy.html">Tìm điểm bán</a><a href="product-detail.html?slug=g7-3in1">G7 3 trong 1</a></nav>
-        <nav class="footer-column" aria-label="Liên hệ"><h2>Liên hệ</h2><a href="partners.html">Đối tác/NPP</a><a href="contact.html">Gửi liên hệ</a><a href="#">Chính sách bảo mật</a></nav>
+      <div class="footer-tnl-grid">
+        <!-- Cột 1: Logo và Bản quyền -->
+        <div class="footer-tnl-col-1">
+          <a class="brand-logo" href="index.html">
+            <img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend">
+          </a>
+          <div class="footer-tnl-copyright">
+            © Trung Nguyen Legend <span data-year></span>
+          </div>
+        </div>
+        
+        <!-- Cột 2: Каталог và Liên kết phụ -->
+        <div class="footer-tnl-col-2">
+          <nav class="footer-tnl-nav-primary">
+            <a href="#">Кофе G7</a>
+            <a href="#">Trung Nguyen Legend</a>
+            <a href="#">Зерновой и молотый кофе</a>
+            <a href="#">Дрип-пакеты</a>
+            <a href="#">Капсулы</a>
+          </nav>
+          
+          <div class="footer-tnl-nav-bottom">
+            <nav class="footer-tnl-nav-secondary">
+              <a href="index.html">О Trung Nguyen Legend</a>
+              <a href="partners.html">Для бизнеса</a>
+              <a href="contact.html">Связаться с нами</a>
+            </nav>
+            
+            <nav class="footer-tnl-nav-legal">
+              <a href="#">Политика обработки персональных данных</a>
+              <a href="#">Декларация о соответствии</a>
+            </nav>
+          </div>
+        </div>
+        
+        <!-- Cột 3: TMĐT và Контакты -->
+        <div class="footer-tnl-col-3">
+          <div class="footer-tnl-ecommerce">
+            <h3>Найти на маркетплейсах</h3>
+            <nav>
+              <a href="#">Ozon</a>
+              <a href="#">Yandex.Market</a>
+              <a href="#">Wildberries</a>
+              <a href="#">Komus</a>
+            </nav>
+          </div>
+          
+          <div class="footer-tnl-contact">
+            <a href="tel:+78003332255" class="phone-link">+7 800 333 22 55</a>
+            <a href="#" class="social-icon" aria-label="VKontakte">
+              <img src="assets/icons/vk.svg" alt="VK" width="24" height="24">
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom"><p>Demo frontend - nội dung tiếng Việt, sẵn sàng bản địa hóa cho thị trường Nga. © <span data-year></span>.</p><div class="legal-links"><a href="#">Chính sách bảo mật</a><a href="#">Điều khoản sử dụng</a><a href="#">Cookie</a></div></div>
     </div>
   </footer>
   <div class="toast" data-toast role="status" aria-live="polite"></div>

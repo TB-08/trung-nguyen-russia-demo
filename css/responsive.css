@@ -360,3 +360,23 @@
     transform: scale(1.15);
   }
 }
+
+/* Scale down website for 15.6 inch laptops (1366px - 1536px) */
+@media (min-width: 1024px) and (max-width: 1536px) {
+  html {
+    zoom: 0.8;
+  }
+  
+  /* Giữ nguyên kích thước ban đầu của thanh menu (bù trừ lại tỷ lệ zoom 0.8 của html) */
+  .site-header {
+    zoom: 1.25; 
+  }
+  
+  /* Bù trừ chiều cao cho các khối ảnh bìa để không bị ngắn lại do ảnh hưởng của zoom */
+  /* 100vh / 0.8 = 125vh */
+  .hero-home, .hero-split {
+    height: 125vh;
+    height: 125svh;
+    min-height: 125vh;
+  }
+}

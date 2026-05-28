@@ -1,0 +1,273 @@
+/* ── CREATIVE LOCATOR (WHERE TO BUY) ── */
+body {
+  background-color: var(--color-cream);
+}
+
+/* 1. Cinematic Hero */
+.locator-hero {
+  background-color: var(--color-brown);
+  background-image: url('../assets/images/trung-nguyen-coffee-hero.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  padding: 180px 0 120px;
+  position: relative;
+  overflow: hidden;
+  color: var(--color-white);
+}
+/* Heavy dark overlay for moody premium feel */
+.locator-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(30, 15, 10, 0.95) 0%, rgba(30, 15, 10, 0.8) 100%);
+  z-index: 1;
+}
+/* Subtle red glow */
+.locator-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; width: 50%;
+  background-image: radial-gradient(circle at 80% 50%, rgba(248, 48, 68, 0.15) 0%, transparent 70%);
+  z-index: 2;
+  pointer-events: none;
+}
+.locator-hero__inner {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.locator-hero__title {
+  flex: 1.2;
+}
+.locator-hero__title .eyebrow {
+  color: var(--color-red);
+  margin-bottom: 20px;
+  display: block;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+.locator-hero__title h1 {
+  font-family: var(--font-display);
+  font-size: 4.5rem; /* Larger */
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -1.5px;
+  color: var(--color-white);
+}
+.locator-hero__desc {
+  flex: 1;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 500px;
+  padding-left: 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15); /* Editorial separator */
+}
+
+/* 2. Asymmetrical Locator Layout */
+.section--locator {
+  padding: 80px 0;
+  position: relative;
+}
+.locator-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+  min-height: 750px;
+}
+
+/* Left Sidebar: City Selector & Store List */
+.locator-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+}
+
+.locator-cities {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Override existing city-tab styles */
+.locator-cities .city-tab {
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  color: rgba(58, 30, 20, 0.5);
+  font-weight: 500;
+  border-left: 2px solid rgba(58, 30, 20, 0.1);
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.locator-cities .city-tab:hover {
+  color: var(--color-brown);
+  background: rgba(58, 30, 20, 0.03);
+}
+.locator-cities .city-tab.is-active {
+  color: var(--color-brown);
+  border-left-color: var(--color-red);
+  font-weight: 700;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.locator-list-container {
+  flex: 1;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(58, 30, 20, 0.04);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* To contain the scrollable area */
+}
+.locator-list-container h3 {
+  font-size: 1.2rem;
+  color: var(--color-brown);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(58, 30, 20, 0.08);
+}
+.store-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Scrollbar styling */
+.store-list::-webkit-scrollbar { width: 4px; }
+.store-list::-webkit-scrollbar-track { background: transparent; }
+.store-list::-webkit-scrollbar-thumb { background: rgba(58,30,20,0.2); border-radius: 4px; }
+
+/* Store Item styling override */
+.store-item {
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-bottom: 1px dashed rgba(58, 30, 20, 0.1);
+  padding-bottom: 20px;
+  box-shadow: none;
+  transition: opacity 0.3s ease;
+}
+.store-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.store-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  border: none;
+  padding: 0;
+}
+.store-item p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+/* Right Side: Map Area */
+.locator-map-area {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  background: #111;
+}
+.locator-map-area .map-mock {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  background-image: url('../assets/images/yandex-map.png');
+  background-size: cover;
+  background-position: center;
+}
+/* Red pins on dark map */
+.locator-map-area .map-pin,
+.locator-map-area .map-city-label,
+.locator-map-area .map-river {
+  display: none !important; /* Hiding fake pins to show the real map screenshot clearly */
+}
+
+/* 3. Call to Action (B2B) */
+.section--locator-cta {
+  padding: 0 0 100px 0;
+}
+.locator-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.locator-cta-card {
+  background: linear-gradient(135deg, #2a1610 0%, #1a0d0a 100%);
+  border-radius: 20px;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.locator-cta-card--light {
+  background: linear-gradient(135deg, #fff 0%, #f9f8f6 100%);
+  color: var(--color-brown);
+  border: 1px solid rgba(58, 30, 20, 0.05);
+  box-shadow: 0 10px 40px rgba(58, 30, 20, 0.03);
+}
+.locator-cta-card img {
+  width: 40px;
+  margin-bottom: 24px;
+  filter: brightness(0) invert(1);
+}
+.locator-cta-card--light img {
+  filter: none;
+}
+.locator-cta-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.locator-cta-card--light h2 {
+  color: var(--color-brown);
+}
+.locator-cta-card p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.locator-cta-card--light p {
+  color: var(--color-muted);
+}
+.locator-cta-card .btn {
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .locator-hero__inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .locator-hero__title h1 { font-size: 3rem; }
+  .locator-grid { grid-template-columns: 1fr; min-height: auto; }
+  .locator-map-area { height: 500px; }
+  .locator-cities { flex-direction: row; overflow-x: auto; padding-bottom: 10px; }
+  .locator-cities .city-tab { border-left: none; border-bottom: 2px solid rgba(58, 30, 20, 0.1); white-space: nowrap; }
+  .locator-cities .city-tab.is-active { border-bottom-color: var(--color-red); }
+}
+@media (max-width: 768px) {
+  .locator-cta-grid { grid-template-columns: 1fr; }
+  .locator-cta-card { padding: 40px 30px; }
+  .locator-hero { padding: 120px 0 60px; }
+}

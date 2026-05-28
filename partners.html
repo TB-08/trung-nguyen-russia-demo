@@ -1,142 +1,348 @@
 <!doctype html>
-<html lang="vi">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Đối tác/NPP | Trung Nguyên Legend</title>
-  <meta name="description" content="Cơ hội hợp tác phân phối Trung Nguyên Legend dành cho nhà phân phối, bán lẻ, horeca và đối tác thương mại tại thị trường Nga.">
-  <meta property="og:title" content="Trở thành đối tác phân phối Trung Nguyên Legend">
-  <meta property="og:description" content="Danh mục cà phê Việt giàu bản sắc, sẵn sàng cho nhiều kênh phân phối tại Nga.">
+  <title>Партнёрам | Trung Nguyen Legend</title>
+  <meta name="description" content="Возможности дистрибуции Trung Nguyen Legend для дистрибьюторов, ритейла, HoReCa и торговых партнёров на российском рынке.">
+  <meta property="og:title" content="Стать партнером по дистрибуции Trung Nguyen Legend">
+  <meta property="og:description" content="Ассортимент вьетнамского кофе, готовый к дистрибуции по различным каналам в России.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/partner-display.svg">
   <link rel="canonical" href="https://ru.trungnguyenlegend.example/partners.html">
-  <!-- TODO: Cấu hình Yandex.Webmaster và IndexNow trên website chính thức. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Bỏ qua đến nội dung</a>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+  <!-- ─── HEADER ─── -->
   <header class="site-header" data-header>
     <div class="container--wide header-inner">
-      <nav class="header-primary" aria-label="Điều hướng chính"><a data-page="products.html" href="products.html">Sản phẩm</a><a data-page="partners.html" href="partners.html">Đối tác/NPP</a><a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a></nav>
-      <a class="brand-logo" href="index.html" aria-label="Trung Nguyên Legend - Trang chủ"><img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyên Legend"></a>
-      <div class="header-actions"><a class="header-find" href="where-to-buy.html">Tìm điểm bán</a><button class="menu-toggle" type="button" data-menu-open aria-label="Mở danh mục điều hướng"><span>Menu</span><span class="hamburger" aria-hidden="true"></span></button></div>
+      <nav class="header-primary" aria-label="Главная навигация">
+        <a data-page="products.html" href="products.html">Продукты</a>
+        <a data-page="partners.html" href="partners.html">Партнёрам</a>
+        <a data-page="coffee-story.html" href="coffee-story.html">История кофе</a>
+      <a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a>
+      </nav>
+      <a class="brand-logo" href="index.html" aria-label="Trung Nguyen Legend - Главная">
+        <img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyen Legend">
+      </a>
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-current" type="button" aria-haspopup="listbox" aria-expanded="false">
+            RU
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <a href="#" class="lang-option active" role="option">RU - Русский</a>
+            <a href="#" class="lang-option" role="option">EN - English</a>
+            </div>
+        </div>
+        <button class="menu-toggle" type="button" data-menu-open aria-label="Открыть навигационное меню">
+          <span>Menu</span><span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
-  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Danh mục điều hướng" aria-hidden="true">
+
+  <!-- ─── FULLSCREEN MENU ─── -->
+  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Меню навигации" aria-hidden="true">
     <div class="container--wide">
-      <div class="menu-head"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a><button class="menu-close" type="button" data-menu-close aria-label="Đóng danh mục điều hướng"></button></div>
+      <div class="menu-head">
+        <a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend"></a>
+        <button class="menu-close" type="button" data-menu-close aria-label="Закрыть навигационное меню"></button>
+      </div>
       <div class="menu-layout">
-        <nav class="menu-nav" aria-label="Danh mục đầy đủ"><a data-page="index.html" href="index.html">Trang chủ</a><a data-page="about.html" href="about.html">Về chúng tôi</a><a data-page="products.html" href="products.html">Sản phẩm</a><a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a><a data-page="partners.html" href="partners.html">Đối tác/NPP</a><a data-page="where-to-buy.html" href="where-to-buy.html">Tìm điểm bán</a><a data-page="news.html" href="news.html">Tin tức</a><a data-page="contact.html" href="contact.html">Liên hệ</a></nav>
-        <aside class="menu-aside"><span class="eyebrow">Hợp tác</span><h2>Mở đầu cuộc trao đổi</h2><p>Gửi thông tin doanh nghiệp để nhận định hướng danh mục và mô hình hợp tác phù hợp.</p><a class="btn btn--cream" href="#dang-ky">Đăng ký hợp tác</a><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></aside>
+        <nav class="menu-nav" aria-label="Полное меню">
+          <a data-page="index.html" href="index.html">Главная</a>
+          <a data-page="about.html" href="about.html">О нас</a>
+          <a data-page="products.html" href="products.html">Продукты</a>
+          <a data-page="coffee-story.html" href="coffee-story.html">История кофе</a>
+          <a data-page="partners.html" href="partners.html">Партнёрам</a>
+          <a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a>
+          <a data-page="news.html" href="news.html">Новости</a>
+          <a data-page="contact.html" href="contact.html">Контакты</a>
+        </nav>
+        <aside class="menu-aside">
+          <span class="eyebrow">Партнёрство</span>
+          <h2>Начать диалог</h2>
+          <p>Отправьте информацию о компании, чтобы получить рекомендации по ассортименту и формату сотрудничества.</p>
+          <a class="btn btn--cream" href="#dang-ky">Стать партнером</a>
+          <div class="social-links">
+            <a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a>
+            <a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
-  <main id="main-content" class="page-main">
-    <section class="page-hero page-hero--with-visual">
-      <div class="container two-column">
-        <div class="section-heading">
-          <span class="eyebrow">Đối tác/NPP</span>
-          <h1>Trở thành đối tác phân phối Trung Nguyên Legend</h1>
-          <p class="lead">Dành cho nhà phân phối, chuỗi bán lẻ, siêu thị, horeca, cửa hàng đặc sản và đối tác thương mại tại thị trường Nga.</p>
-          <div class="button-row"><a class="btn btn--primary" href="#dang-ky">Gửi đăng ký hợp tác</a><a class="btn btn--outline" href="products.html">Xem danh mục</a></div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!--  MAIN                                                      -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <main id="main-content" class="page-main page-partners-exclusive">
+
+    <!-- ┌───────────────────────────────────────────────────────┐ -->
+    <!-- │  1. HERO — EXCLUSIVE ZEN CINEMATIC                    │ -->
+    <!-- └───────────────────────────────────────────────────────┘ -->
+    <section class="partners-hero">
+      <div class="partners-hero__bg">
+        <div class="partners-hero__zen-circle" aria-hidden="true"></div>
+      </div>
+      <div class="container partners-hero__inner">
+        <span class="partners-hero__eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          Философия партнерства
+        </span>
+        <h1 class="partners-hero__title reveal" style="transition-delay: 0.1s;">
+          Распространяйте энергию<br>
+          <em>Охватить весь мир</em>
+        </h1>
+        <p class="partners-hero__lead reveal" style="transition-delay: 0.2s;">
+          Присоединяйтесь к элитной сети партнёров Trung Nguyen Legend, несущих наследие вьетнамского кофе в самое сердце России.
+        </p>
+        <div class="partners-hero__actions reveal" style="transition-delay: 0.3s;">
+          <a class="btn-exclusive" href="#dang-ky">Стать партнёром</a>
         </div>
-        <figure class="page-hero__image"><img src="assets/images/partner-display.svg" alt="Minh họa trưng bày sản phẩm cho đối tác phân phối"></figure>
+      </div>
+      <div class="partners-hero__scroll">
+        <span class="scroll-text">Изучить</span>
+        <span class="scroll-line"></span>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container--wide">
-        <div class="section-heading section-heading--center">
-          <span class="eyebrow">Lợi ích hợp tác</span>
-          <h2>Một thương hiệu có lý do để được lựa chọn</h2>
-          <p>Nền tảng B2B được thiết kế để hỗ trợ thuyết phục người mua, tổ chức danh mục và xây dựng độ nhận biết dài hạn.</p>
-        </div>
-        <div class="benefit-grid">
-          <article class="benefit-card reveal"><h3>Bản sắc Việt Nam mạnh</h3><p>Câu chuyện nguồn gốc và Robusta Việt Nam tạo khác biệt rõ.</p></article>
-          <article class="benefit-card reveal"><h3>Hệ sản phẩm đa dạng</h3><p>Nhiều định dạng đáp ứng từ tiêu dùng nhanh đến cao cấp.</p></article>
-          <article class="benefit-card reveal"><h3>Đa kênh phân phối</h3><p>Phù hợp siêu thị, cửa hàng đặc sản, văn phòng và horeca.</p></article>
-          <article class="benefit-card reveal"><h3>Dễ truyền thông</h3><p>Di sản, Coffee Tao và hương vị tạo nội dung phong phú.</p></article>
-          <article class="benefit-card reveal"><h3>Hỗ trợ bán hàng</h3><p>Định hướng vật liệu trưng bày và nội dung giới thiệu điểm bán.</p></article>
-          <article class="benefit-card reveal"><h3>Phù hợp quà tặng</h3><p>Bộ sưu tập cao cấp phục vụ doanh nghiệp và dịp đặc biệt.</p></article>
+    <!-- ┌───────────────────────────────────────────────────────┐ -->
+    <!-- │  2. PILLARS — ASYMMETRICAL EDITORIAL                  │ -->
+    <!-- └───────────────────────────────────────────────────────┘ -->
+    <section class="partners-pillars" id="nen-tang">
+      <div class="container">
+        <header class="partners-section-header reveal">
+          <h2 class="partners-section-title">Преимущества<br><em>создано для успеха</em></h2>
+        </header>
+
+        <div class="pillars-editorial-grid">
+          
+          <article class="pillar-card reveal" style="transition-delay: 0s">
+            <div class="pillar-card__bg-number" aria-hidden="true">01</div>
+            <h3 class="pillar-card__title">Эксклюзивность</h3>
+            <p class="pillar-card__body">Сила лучшего в мире кофе Robusta из самого сердца Вьетнама — знаковые продукты для любой полки.</p>
+            <div class="pillar-card__line"></div>
+          </article>
+
+          <article class="pillar-card pillar-card--offset reveal" style="transition-delay: 0.2s">
+            <div class="pillar-card__bg-number" aria-hidden="true">02</div>
+            <h3 class="pillar-card__title">Маржинальность</h3>
+            <p class="pillar-card__body">Прямые поставки из регионов произрастания гарантируют максимальные скидки и превосходную маржинальность.</p>
+            <div class="pillar-card__line"></div>
+          </article>
+
+          <article class="pillar-card reveal" style="transition-delay: 0.1s">
+            <div class="pillar-card__bg-number" aria-hidden="true">03</div>
+            <h3 class="pillar-card__title">Территориальная защита</h3>
+            <p class="pillar-card__body">Чёткие условия эксклюзивности — защита от демпинга и контроль доли рынка в каждом федеральном округе.</p>
+            <div class="pillar-card__line"></div>
+          </article>
+
+          <article class="pillar-card pillar-card--offset reveal" style="transition-delay: 0.3s">
+            <div class="pillar-card__bg-number" aria-hidden="true">04</div>
+            <h3 class="pillar-card__title">Полная поддержка</h3>
+            <p class="pillar-card__body">Обучение Кофейному Дао, роскошные POS-материалы, маркетинговый бюджет — поддержка с первого дня до успеха.</p>
+            <div class="pillar-card__line"></div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section section--brown">
-      <div class="container--wide">
-        <div class="section-heading">
-          <span class="eyebrow">Danh mục B2B</span>
-          <h2>Danh mục cho từng cơ hội phân phối</h2>
-        </div>
-        <div class="portfolio-grid">
-          <article class="portfolio-card reveal"><h3>G7</h3><p>Cà phê hòa tan cho độ phủ bán lẻ và văn phòng.</p></article>
-          <article class="portfolio-card reveal"><h3>Bộ sưu tập Legend</h3><p>Lựa chọn cao cấp cho quà tặng và kênh chọn lọc.</p></article>
-          <article class="portfolio-card reveal"><h3>Rang xay</h3><p>Trải nghiệm pha phin cho horeca và người sành vị.</p></article>
-          <article class="portfolio-card reveal"><h3>Viên nén</h3><p>Định dạng pha máy cho nhà ở, văn phòng, khách sạn.</p></article>
-          <article class="portfolio-card reveal"><h3>Phin giấy</h3><p>Tiện lợi cho du lịch, thử nghiệm và quà trải nghiệm.</p></article>
-        </div>
-      </div>
-    </section>
+    <!-- ┌───────────────────────────────────────────────────────┐ -->
+    <!-- │  3. CHANNEL SHOWCASE — INTERACTIVE ACCORDION          │ -->
+    <!-- └───────────────────────────────────────────────────────┘ -->
+    <section class="partners-channels">
+      <div class="container">
+        <header class="partners-section-header text-center reveal">
+          <span class="partners-hero__eyebrow" style="margin: 0 auto 16px;">
+            <span class="eyebrow-line"></span>
+            Форматы сотрудничества
+            <span class="eyebrow-line"></span>
+          </span>
+          <h2 class="partners-section-title">Экосистема<br><em>Великие продукты</em></h2>
+        </header>
 
-    <section class="section section--beige">
-      <div class="container--wide">
-        <div class="section-heading section-heading--center"><span class="eyebrow">Quy trình</span><h2>Bốn bước hợp tác rõ ràng</h2></div>
-        <div class="process-grid">
-          <article class="process-card reveal"><span class="step">1</span><h3>Gửi thông tin</h3><p>Chia sẻ mô hình kinh doanh, thành phố và nhu cầu ban đầu.</p></article>
-          <article class="process-card reveal"><span class="step">2</span><h3>Tư vấn danh mục</h3><p>Xác định nhóm sản phẩm phù hợp kênh và khách hàng.</p></article>
-          <article class="process-card reveal"><span class="step">3</span><h3>Thống nhất mô hình</h3><p>Trao đổi phạm vi, hỗ trợ trưng bày và kế hoạch bán hàng.</p></article>
-          <article class="process-card reveal"><span class="step">4</span><h3>Triển khai hợp tác</h3><p>Chuẩn bị nội dung, điểm bán và hoạt động giới thiệu.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="dang-ky">
-      <div class="container two-column">
-        <div>
-          <div class="section-heading">
-            <span class="eyebrow">Đăng ký B2B</span>
-            <h2>Bắt đầu trao đổi phân phối</h2>
-            <p>Điền thông tin dưới đây. Trong bản demo, dữ liệu chỉ được xác nhận trên giao diện và không gửi đến máy chủ.</p>
+        <div class="channel-accordion">
+          
+          <div class="channel-pane is-active">
+            <div class="channel-pane__bg" style="background-image: url('assets/images/sp1.png');"></div>
+            <div class="channel-pane__overlay"></div>
+            <div class="channel-pane__content">
+              <span class="channel-pane__tag">Подарочный канал</span>
+              <h3 class="channel-pane__title">Legend Collection</h3>
+              <p class="channel-pane__desc">Шедевры кофе копи-лювак, дипломатические подарочные наборы и идеальный выбор для супермаркетов премиум-класса — истинный знак отличия.</p>
+            </div>
           </div>
-          <aside class="telegram-widget reveal">
-            <div class="telegram-widget__heading"><img src="assets/icons/telegram.svg" alt=""><div><h3>Trao đổi nhanh qua Telegram</h3><p>Kênh liên hệ mô phỏng dành cho đối tác.</p></div></div>
-            <a class="btn btn--outline" href="#" onclick="window.showDemoToast('Liên kết Telegram sẽ được kích hoạt khi triển khai chính thức.'); return false;">Mở Telegram</a>
-          </aside>
+
+          <div class="channel-pane">
+            <div class="channel-pane__bg" style="background-image: url('assets/images/sp3.png');"></div>
+            <div class="channel-pane__overlay"></div>
+            <div class="channel-pane__content">
+              <span class="channel-pane__tag">Розничный канал</span>
+              <h3 class="channel-pane__title">Энергия G7</h3>
+              <p class="channel-pane__desc">Легендарный растворимый кофе для розницы, любимый во всём мире. Оптимальный выбор для быстрого оборота в супермаркетах и на маркетплейсах.</p>
+            </div>
+          </div>
+
+          <div class="channel-pane">
+            <div class="channel-pane__bg" style="background-image: url('assets/images/sp4.png');"></div>
+            <div class="channel-pane__overlay"></div>
+            <div class="channel-pane__content">
+              <span class="channel-pane__tag">Канал HoReCa</span>
+              <h3 class="channel-pane__title">Молотый кофе</h3>
+              <p class="channel-pane__desc">Исключительная палитра вкусов № 1–5, созданная специально для профессиональных бариста, ресторанов и роскошных кофеен.</p>
+            </div>
+          </div>
+
         </div>
-        <form class="form-panel" data-partner-form novalidate>
-          <h2>Thông tin đối tác</h2>
-          <p>Đội ngũ phụ trách sẽ sử dụng thông tin này trong quy trình thật sau khi được tích hợp.</p>
-          <div class="form-grid form-grid--two">
-            <div class="field"><label for="company">Tên công ty *</label><input id="company" name="company" required><span class="field-error">Vui lòng nhập tên công ty.</span></div>
-            <div class="field"><label for="partner-name">Người liên hệ *</label><input id="partner-name" name="contactName" required><span class="field-error">Vui lòng nhập người liên hệ.</span></div>
-            <div class="field"><label for="partner-email">Email *</label><input id="partner-email" type="email" name="email" required><span class="field-error">Vui lòng nhập email hợp lệ.</span></div>
-            <div class="field"><label for="city">Thành phố *</label><input id="city" name="city" required><span class="field-error">Vui lòng nhập thành phố.</span></div>
-            <div class="field field--full"><label for="business-type">Loại hình kinh doanh *</label><select id="business-type" name="businessType" required><option value="">Chọn loại hình</option><option>Nhà phân phối</option><option>Chuỗi bán lẻ / siêu thị</option><option>Horeca</option><option>Cửa hàng đặc sản</option><option>Quà tặng doanh nghiệp</option><option>Khác</option></select><span class="field-error">Vui lòng chọn loại hình kinh doanh.</span></div>
-            <div class="field field--full"><label for="partner-message">Tin nhắn thêm</label><textarea id="partner-message" name="message" placeholder="Danh mục quan tâm, khu vực phân phối hoặc câu hỏi của bạn"></textarea></div>
-          </div>
-          <div class="form-actions">
-            <button class="btn btn--primary" type="submit">Gửi đăng ký hợp tác</button>
-            <p class="muted-note" data-form-status hidden aria-live="polite"></p>
-          </div>
-        </form>
       </div>
     </section>
+
+    <!-- ┌───────────────────────────────────────────────────────┐ -->
+    <!-- │  4. REGISTRATION — VIP PORTAL FORM                    │ -->
+    <!-- └───────────────────────────────────────────────────────┘ -->
+    <section class="partners-vip-portal" id="dang-ky">
+      <div class="container partners-vip-portal__inner">
+        <div class="vip-portal-sidebar reveal">
+          <h2 class="vip-portal-sidebar__title">Доступ<br><em>Привилегии</em></h2>
+          <p class="vip-portal-sidebar__desc">Прямая связь со стратегическим консультационным советом Trung Nguyen Legend в России. Мы ответим в течение 24 часов.</p>
+          
+          <div class="vip-contact-list">
+            <a href="tel:+78003332255" class="vip-contact">
+              <span class="vip-contact__label">Горячая линия</span>
+              <strong class="vip-contact__value">+7 800 333 22 55</strong>
+            </a>
+            <a href="#" class="vip-contact">
+              <span class="vip-contact__label">Онлайн-поддержка</span>
+              <strong class="vip-contact__value">@TNL_Russia_B2B</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="vip-portal-form reveal" style="transition-delay: 0.15s">
+          <form class="exclusive-form" data-partner-form novalidate>
+            <div class="exclusive-form__group">
+              <input type="text" id="vip-company" name="company" class="exclusive-form__input" placeholder=" " required>
+              <label for="vip-company" class="exclusive-form__label">Название компании</label>
+              <div class="exclusive-form__border"></div>
+            </div>
+
+            <div class="exclusive-form__group">
+              <input type="text" id="vip-name" name="contactName" class="exclusive-form__input" placeholder=" " required>
+              <label for="vip-name" class="exclusive-form__label">Контактное лицо</label>
+              <div class="exclusive-form__border"></div>
+            </div>
+
+            <div class="exclusive-form__row">
+              <div class="exclusive-form__group">
+                <input type="email" id="vip-email" name="email" class="exclusive-form__input" placeholder=" " required>
+                <label for="vip-email" class="exclusive-form__label">Email</label>
+                <div class="exclusive-form__border"></div>
+              </div>
+              <div class="exclusive-form__group">
+                <input type="tel" id="vip-phone" name="phone" class="exclusive-form__input" placeholder=" " required>
+                <label for="vip-phone" class="exclusive-form__label">Номер телефона</label>
+                <div class="exclusive-form__border"></div>
+              </div>
+            </div>
+
+            <div class="exclusive-form__group">
+              <select id="vip-type" name="businessType" class="exclusive-form__select" required>
+                <option value="" disabled selected>Предпочтительный формат сотрудничества...</option>
+                <option value="exclusive">Эксклюзивный дистрибьютор</option>
+                <option value="retail">Премиальная сеть супермаркетов</option>
+                <option value="horeca">Сеть HoReCa</option>
+                <option value="online">Электронная коммерция</option>
+                <option value="other">Другое</option>
+              </select>
+              <div class="exclusive-form__border"></div>
+            </div>
+
+            <div class="exclusive-form__group">
+              <textarea id="vip-msg" name="message" class="exclusive-form__input exclusive-form__textarea" placeholder=" " rows="3"></textarea>
+              <label for="vip-msg" class="exclusive-form__label">Ваше сообщение</label>
+              <div class="exclusive-form__border"></div>
+            </div>
+
+            <button type="submit" class="btn-exclusive btn-exclusive--submit">
+              Отправить запрос
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer class="site-footer">
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer site-footer--tnl">
     <div class="container--wide">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a><p>Demo frontend cho định hướng thương hiệu Trung Nguyên Legend tại thị trường Nga.</p><div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div></div>
-        <nav class="footer-column" aria-label="Khám phá"><h2>Khám phá</h2><a href="about.html">Về chúng tôi</a><a href="coffee-story.html">Câu chuyện cà phê</a><a href="news.html">Tin tức</a></nav>
-        <nav class="footer-column" aria-label="Sản phẩm"><h2>Sản phẩm</h2><a href="products.html">Danh mục sản phẩm</a><a href="where-to-buy.html">Tìm điểm bán</a><a href="product-detail.html?slug=g7-3in1">G7 3 trong 1</a></nav>
-        <nav class="footer-column" aria-label="Liên hệ"><h2>Liên hệ</h2><a href="partners.html">Đối tác/NPP</a><a href="contact.html">Gửi liên hệ</a><a href="#">Chính sách bảo mật</a></nav>
+      <div class="footer-tnl-grid">
+        <!-- Cột 1: Logo và Bản quyền -->
+        <div class="footer-tnl-col-1">
+          <a class="brand-logo" href="index.html">
+            <img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend">
+          </a>
+          <div class="footer-tnl-copyright">
+            © Trung Nguyen Legend <span data-year></span>
+          </div>
+        </div>
+
+        <!-- Cột 2: Каталог và Liên kết phụ -->
+        <div class="footer-tnl-col-2">
+          <nav class="footer-tnl-nav-primary">
+            <a href="#">Кофе G7</a>
+            <a href="#">Trung Nguyen Legend</a>
+            <a href="#">Зерновой и молотый кофе</a>
+            <a href="#">Дрип-пакеты</a>
+            <a href="#">Капсулы</a>
+          </nav>
+          <div class="footer-tnl-nav-bottom">
+            <nav class="footer-tnl-nav-secondary">
+              <a href="index.html">О Trung Nguyen Legend</a>
+              <a href="partners.html">Для бизнеса</a>
+              <a href="contact.html">Связаться с нами</a>
+            </nav>
+            <nav class="footer-tnl-nav-legal">
+              <a href="#">Политика обработки персональных данных</a>
+              <a href="#">Декларация о соответствии</a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Cột 3: TMĐT và Контакты -->
+        <div class="footer-tnl-col-3">
+          <div class="footer-tnl-ecommerce">
+            <h3>Найти на маркетплейсах</h3>
+            <nav>
+              <a href="#">Ozon</a>
+              <a href="#">Yandex.Market</a>
+              <a href="#">Wildberries</a>
+              <a href="#">Komus</a>
+            </nav>
+          </div>
+          <div class="footer-tnl-contact">
+            <a href="tel:+78003332255" class="phone-link">+7 800 333 22 55</a>
+            <a href="#" class="social-icon" aria-label="VKontakte">
+              <img src="assets/icons/vk.svg" alt="VK" width="24" height="24">
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom"><p>Demo frontend - nội dung tiếng Việt, sẵn sàng bản địa hóa cho thị trường Nga. © <span data-year></span>.</p><div class="legal-links"><a href="#">Chính sách bảo mật</a><a href="#">Điều khoản sử dụng</a><a href="#">Cookie</a></div></div>
     </div>
   </footer>
+
   <div class="toast" data-toast role="status" aria-live="polite"></div>
-  <!-- TODO: Tích hợp Yandex.Metrica khi triển khai chính thức. -->
   <script src="js/main.js"></script>
   <script src="js/forms.js"></script>
 </body>

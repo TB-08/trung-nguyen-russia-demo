@@ -5,182 +5,218 @@
     {
       id: 1,
       slug: "g7-3in1",
-      name: "G7 3 trong 1",
+      name: "G7 3 в 1",
       category: "g7",
-      categoryLabel: "Cà phê hòa tan G7",
-      image: "assets/products/g7-3in1.svg",
-      shortDescription: "Cân bằng vị cà phê đậm, độ béo mượt và vị ngọt vừa đủ cho nhịp sống hiện đại.",
-      longDescription: "G7 3 trong 1 mang tinh thần cà phê Việt Nam vào định dạng tiện lợi: đậm hương, tròn vị và dễ chuẩn bị tại văn phòng, tại nhà hoặc khi di chuyển.",
-      flavorNotes: ["Đậm rang", "Kem mượt", "Hậu vị hài hòa"],
-      intensity: "3/5 - Cân bằng",
-      format: "Gói hòa tan dùng một lần",
-      suitableFor: ["Người cần pha nhanh mỗi sáng", "Văn phòng và khu vực pantry", "Người bắt đầu khám phá cà phê Việt"],
+      categoryLabel: "Растворимый кофе G7",
+      image: "ảnh footage/ảnh sp (1).png",
+      shortDescription: "Сбалансированный крепкий вкус кофе, нежные сливки и умеренная сладость для современного ритма жизни.",
+      longDescription: "G7 3 в 1 воплощает дух вьетнамского кофе в удобном формате: глубокий аромат, насыщенный вкус и простота приготовления в офисе, дома или в дороге.",
+      flavorNotes: ["Крепкая обжарка", "Нежные сливки", "Гармоничное послевкусие"],
+      intensity: "3/5 — Сбалансированный",
+      format: "Порционный растворимый пакетик",
+      suitableFor: ["Для тех, кому нужно быстро приготовить кофе утром", "Для офисов и кофе-поинтов", "Для тех, кто только начинает открывать вьетнамский кофе"],
       needs: ["de-pha", "van-phong", "tien-loi"],
-      brewingMethod: ["Cho một gói vào cốc.", "Thêm 75 ml nước nóng khoảng 80-90°C.", "Khuấy đều và thưởng thức khi còn ấm."],
-      details: { "Dòng sản phẩm": "G7 hòa tan", "Phong cách": "Cà phê sữa tiện lợi", "Quy cách demo": "Hộp gói lẻ", "Gợi ý kênh bán": "Siêu thị, cửa hàng tiện lợi, văn phòng" },
+      brewingMethod: ["Высыпьте один пакетик в чашку.", "Добавьте 75 ml горячей воды (около 80-90°C).", "Хорошо перемешайте и наслаждайтесь теплым напитком."],
+      details: { "Линейка продукции": "Растворимый G7", "Стиль": "Кофе с молоком", "Формат демо": "Коробка с саше", "Каналы продаж": "Супермаркеты, магазины у дома, офисы" },
       relatedProductSlugs: ["g7-gu-manh-x2", "g7-2in1", "legend-cappuccino"]
     },
     {
       id: 2,
       slug: "g7-2in1",
-      name: "G7 2 trong 1",
+      name: "G7 2 в 1",
       category: "g7",
-      categoryLabel: "Cà phê hòa tan G7",
-      image: "assets/products/g7-2in1.svg",
-      shortDescription: "Cà phê và đường với vị đậm rõ hơn, dành cho người không dùng kem sữa.",
-      longDescription: "Một lựa chọn gọn gàng để cảm nhận nét mạnh mẽ của cà phê hòa tan Việt Nam, giữ độ ngọt vừa phải và cấu trúc vị rõ nét.",
-      flavorNotes: ["Rang đậm", "Ngọt nhẹ", "Sạch vị"],
-      intensity: "4/5 - Đậm",
-      format: "Gói hòa tan dùng một lần",
-      suitableFor: ["Người thích vị cà phê rõ", "Bàn làm việc", "Hành trình ngắn ngày"],
+      categoryLabel: "Растворимый кофе G7",
+      image: "ảnh footage/ảnh sp (2).png",
+      shortDescription: "Кофе и сахар с более выраженной крепостью для тех, кто предпочитает кофе без добавления сливок.",
+      longDescription: "Простой выбор, чтобы прочувствовать всю силу вьетнамского растворимого кофе с умеренной сладостью и чётким вкусовым профилем.",
+      flavorNotes: ["Темная обжарка", "Легкая сладость", "Чистый вкус"],
+      intensity: "4/5 — Крепкий",
+      format: "Порционный растворимый пакетик",
+      suitableFor: ["Любители чистого кофейного вкуса", "Для рабочего стола", "Для коротких поездок"],
       needs: ["ca-phe-manh", "de-pha", "van-phong", "tien-loi"],
-      brewingMethod: ["Xé gói và cho vào cốc.", "Thêm 70 ml nước nóng.", "Khuấy kỹ để hương rang lan tỏa."],
-      details: { "Dòng sản phẩm": "G7 hòa tan", "Phong cách": "Cà phê có đường", "Quy cách demo": "Hộp gói lẻ", "Gợi ý kênh bán": "Bán lẻ và văn phòng" },
+      brewingMethod: ["Раскройте пакетик и высыпьте в чашку.", "Добавьте 70 ml горячей воды.", "Тщательно перемешайте для раскрытия аромата обжарки."],
+      details: { "Линейка продукции": "Растворимый G7", "Стиль": "Кофе с сахаром", "Формат демо": "Коробка с саше", "Каналы продаж": "Розничная торговля и офисы" },
       relatedProductSlugs: ["g7-den", "g7-3in1", "g7-gu-manh-x2"]
     },
     {
       id: 3,
       slug: "g7-den",
-      name: "G7 Đen",
+      name: "G7 Черный",
       category: "g7",
-      categoryLabel: "Cà phê hòa tan G7",
-      image: "assets/products/g7-den.svg",
-      shortDescription: "Vị cà phê đen nguyên bản, gọn vị và mạnh mẽ, không thêm đường hay kem.",
-      longDescription: "G7 Đen hướng tới trải nghiệm trực diện: hương rang nổi bật, thân vị chắc và kết thúc sạch, phù hợp khi cần sự tập trung.",
-      flavorNotes: ["Ca cao đắng", "Khói rang", "Hậu vị khô"],
-      intensity: "5/5 - Rất đậm",
-      format: "Gói hòa tan đen",
-      suitableFor: ["Người uống cà phê đen", "Người ưu tiên vị mạnh", "Những buổi làm việc cần tỉnh táo"],
+      categoryLabel: "Растворимый кофе G7",
+      image: "ảnh footage/ảnh sp (3).png",
+      shortDescription: "Классический черный кофе, чистый и крепкий, без добавления сахара и сливок.",
+      longDescription: "G7 Черный ориентирован на чистый кофейный вкус: выраженный аромат обжарки, плотное тело и чистое послевкусие для максимальной концентрации.",
+      flavorNotes: ["Горький какао", "Дымные нотки обжарки", "Сухое послевкусие"],
+      intensity: "5/5 — Очень крепкий",
+      format: "Растворимый черный кофе в саше",
+      suitableFor: ["Любители черного кофе", "Для тех, кто предпочитает максимальную крепость", "Для рабочих сессий, требующих концентрации"],
       needs: ["ca-phe-manh", "de-pha", "van-phong", "tien-loi"],
-      brewingMethod: ["Cho một gói vào tách nhỏ.", "Thêm 60-70 ml nước nóng.", "Có thể thêm đá để dùng lạnh."],
-      details: { "Dòng sản phẩm": "G7 hòa tan", "Phong cách": "Cà phê đen", "Quy cách demo": "Hộp gói lẻ", "Gợi ý kênh bán": "Bán lẻ, horeca, văn phòng" },
+      brewingMethod: ["Высыпьте один пакетик в небольшую чашку.", "Добавьте 60-70 ml горячей воды.", "Можно добавить лед для употребления в холодном виде."],
+      details: { "Линейка продукции": "Растворимый G7", "Стиль": "Черный кофе", "Формат demo": "Коробка с саше", "Каналы продаж": "Ритейл, HoReCa, офисы" },
       relatedProductSlugs: ["g7-2in1", "g7-gu-manh-x2", "sang-tao"]
     },
     {
       id: 4,
       slug: "g7-gu-manh-x2",
-      name: "G7 Gu Mạnh X2",
+      name: "G7 Strong x2",
       category: "g7",
-      categoryLabel: "Cà phê hòa tan G7",
-      image: "assets/products/g7-gu-manh-x2.svg",
-      shortDescription: "Dấu ấn Robusta đậm hơn dành cho người yêu nhịp vị mạnh và năng lượng rõ rệt.",
-      longDescription: "G7 Gu Mạnh X2 là lựa chọn nổi bật cho thị trường yêu thích hương vị cường độ cao, xây dựng nhận biết về phong cách cà phê Việt đậm sâu.",
-      flavorNotes: ["Robusta đậm", "Caramen rang", "Hậu vị kéo dài"],
-      intensity: "5/5 - Mạnh nổi bật",
-      format: "Gói hòa tan dùng một lần",
-      suitableFor: ["Người yêu cà phê cường độ cao", "Người tiêu dùng muốn thử Robusta", "Kệ hàng cần sản phẩm điểm nhấn"],
+      categoryLabel: "Растворимый кофе G7",
+      image: "ảnh footage/ảnh sp (4).png",
+      shortDescription: "Яркий характер робусты повышенной крепости для любителей интенсивного вкуса и мощного заряда энергии.",
+      longDescription: "G7 Strong x2 — выдающийся выбор для рынков, предпочитающих высокую интенсивность вкуса, формирующий представление о глубоком характере вьетнамского кофе.",
+      flavorNotes: ["Крепкая робуста", "Жжёный карамель", "Длительное послевкусие"],
+      intensity: "5/5 — Особо крепкий",
+      format: "Порционный растворимый пакетик",
+      suitableFor: ["Любители кофе высокой интенсивности", "Потребители, желающие попробовать истинную робусту", "Полки магазинов, требующие ярких акцентов в ассортименте"],
       needs: ["ca-phe-manh", "de-pha", "van-phong"],
-      brewingMethod: ["Dùng một gói cho tách 70 ml.", "Rót nước nóng và khuấy đều.", "Thưởng thức nóng để cảm nhận thân vị dày."],
-      details: { "Dòng sản phẩm": "G7 hòa tan", "Phong cách": "Gu mạnh", "Quy cách demo": "Hộp gói lẻ", "Gợi ý kênh bán": "Siêu thị, sàn bán lẻ, văn phòng" },
+      brewingMethod: ["Используйте один пакетик на чашку 70 ml.", "Залейте горячей водой и хорошо перемешайте.", "Наслаждайтесь горячим, чтобы почувствовать плотную текстуру."],
+      details: { "Линейка продукции": "Растворимый G7", "Стиль": "Повышенная крепость", "Формат demo": "Коробка с саше", "Каналы продаж": "Супермаркеты, маркетплейсы, офисы" },
       relatedProductSlugs: ["g7-den", "g7-3in1", "sang-tao"]
     },
     {
       id: 5,
       slug: "legend-special-edition",
-      name: "Trung Nguyên Legend Phiên bản Đặc biệt",
+      name: "Trung Nguyen Legend Special Edition",
       category: "legend",
-      categoryLabel: "Bộ sưu tập Trung Nguyên Legend",
-      image: "assets/products/legend-special.svg",
-      shortDescription: "Dòng tuyển chọn có diện mạo trang trọng, thích hợp cho trải nghiệm cao cấp và biếu tặng.",
-      longDescription: "Phiên bản Đặc biệt đại diện cho ngôn ngữ quà tặng cao cấp của thương hiệu: câu chuyện di sản, thiết kế trang trọng và vị cà phê sâu lắng.",
-      flavorNotes: ["Gỗ tuyết tùng", "Ca cao", "Hậu vị sâu"],
-      intensity: "4/5 - Đậm sang trọng",
-      format: "Hộp cà phê tuyển chọn",
-      suitableFor: ["Quà tặng doanh nghiệp", "Khách hàng cao cấp", "Kệ hàng đặc sản nhập khẩu"],
+      categoryLabel: "Коллекция Trung Nguyen Legend",
+      image: "ảnh footage/ảnh sp (1).jpg",
+      shortDescription: "Эксклюзивная линейка в премиальной презентации, идеально подходящая для подарков и особого случая.",
+      longDescription: "Special Edition представляет собой язык премиальных подарков бренда: история наследия, изысканный дизайн и глубокий, запоминающийся кофейный вкус.",
+      flavorNotes: ["Кедр", "Какао", "Глубокое послевкусие"],
+      intensity: "4/5 — Изысканно крепкий",
+      format: "Подарочная коробка",
+      suitableFor: ["Корпоративные подарки", "Премиальные клиенты", "Полки импортных деликатесов"],
       needs: ["ca-phe-manh", "qua-tang"],
-      brewingMethod: ["Pha theo định dạng sản phẩm thực tế khi phân phối.", "Ưu tiên nước nóng tinh khiết.", "Dùng trong tách sứ để cảm nhận hương thơm."],
-      details: { "Dòng sản phẩm": "Bộ sưu tập Legend", "Phong cách": "Tuyển chọn cao cấp", "Quy cách demo": "Hộp quà", "Gợi ý kênh bán": "Quà tặng, cửa hàng cao cấp, horeca" },
+      brewingMethod: ["Приготовление в соответствии с финальным форматом упаковки.", "Рекомендуется использовать чистую горячую воду.", "Подавайте в фарфоровой посуде для лучшего раскрытия аромата."],
+      details: { "Линейка продукции": "Коллекция Legend", "Стиль": "Премиум-выбор", "Формат demo": "Подарочный набор", "Каналы продаж": "Бутики подарков, премиальный ритейл, HoReCa" },
       relatedProductSlugs: ["legend-classic", "legend-capsule", "sang-tao"]
     },
     {
       id: 6,
       slug: "legend-classic",
-      name: "Trung Nguyên Legend Cổ điển",
+      name: "Trung Nguyen Legend Classic",
       category: "legend",
-      categoryLabel: "Bộ sưu tập Trung Nguyên Legend",
-      image: "assets/products/legend-classic.svg",
-      shortDescription: "Một cấu trúc vị hài hòa để đưa tinh thần Legend vào thói quen thưởng thức thường nhật.",
-      longDescription: "Dòng Cổ điển cân bằng giữa hình ảnh premium và tính tiếp cận, phù hợp với người tiêu dùng muốn nâng cấp trải nghiệm cà phê tại nhà.",
-      flavorNotes: ["Hạt rang", "Sô-cô-la", "Êm dịu"],
-      intensity: "3/5 - Hài hòa",
-      format: "Hộp cà phê tuyển chọn",
-      suitableFor: ["Thưởng thức tại nhà", "Tiếp khách", "Quà tặng thân mật"],
+      categoryLabel: "Коллекция Trung Nguyen Legend",
+      image: "ảnh footage/ảnh sp (2).jpg",
+      shortDescription: "Сбалансированный вкус для интеграции духа Legend в ежедневный кофейный ритуал.",
+      longDescription: "Линейка Classic сочетает премиальный имидж и доступность, идеально подходя для тех, кто хочет повысить уровень домашнего потребления кофе.",
+      flavorNotes: ["Обжаренное зерно", "Шоколад", "Мягкий вкус"],
+      intensity: "3/5 — Гармоничный",
+      format: "Стандартная коробка",
+      suitableFor: ["Потребление дома", "Прием гостей", "Неформальные подарки"],
       needs: ["qua-tang", "de-pha"],
-      brewingMethod: ["Chuẩn bị theo định dạng đóng gói chính thức.", "Dùng nước nóng vừa sôi.", "Thưởng thức chậm để cảm nhận hậu vị."],
-      details: { "Dòng sản phẩm": "Bộ sưu tập Legend", "Phong cách": "Cổ điển", "Quy cách demo": "Hộp tiêu chuẩn", "Gợi ý kênh bán": "Bán lẻ cao cấp và quà tặng" },
+      brewingMethod: ["Заваривание в соответствии с официальным форматом упаковки.", "Используйте свежевскипяченную воду.", "Пейте медленно, чтобы в полной мере оценить послевкусие."],
+      details: { "Линейка продукции": "Коллекция Legend", "Стиль": "Классический", "Формат demo": "Стандартная пачка", "Каналы продаж": "Премиальный ритейл и сувениры" },
       relatedProductSlugs: ["legend-special-edition", "legend-cappuccino", "phin-giay"]
     },
     {
       id: 7,
       slug: "legend-capsule",
-      name: "Viên nén Trung Nguyên Legend",
+      name: "Капсулы Trung Nguyen Legend",
       category: "capsule",
-      categoryLabel: "Viên nén cà phê",
-      image: "assets/products/legend-capsule.svg",
-      shortDescription: "Trải nghiệm hương vị đậm gọn trong định dạng pha máy tiện dụng và nhất quán.",
-      longDescription: "Viên nén Legend phục vụ thói quen pha máy tại gia đình, văn phòng và khu vực dịch vụ lưu trú, kết nối chất Việt với nghi thức hiện đại.",
-      flavorNotes: ["Espresso đậm", "Hạt dẻ rang", "Lớp crema"],
-      intensity: "4/5 - Đậm",
-      format: "Viên nén pha máy",
-      suitableFor: ["Người dùng máy viên nén", "Văn phòng cao cấp", "Khách sạn và căn hộ dịch vụ"],
+      categoryLabel: "Капсульный кофе",
+      image: "ảnh footage/ảnh sp (3).jpg",
+      shortDescription: "Насыщенный концентрированный вкус в удобном формате для стабильного качества кофе из кофемашины.",
+      longDescription: "Капсулы Legend адаптированы под привычки владельцев капсульных кофемашин дома, в офисах и гостиницах, соединяя вьетнамский вкус с современным ритуалом.",
+      flavorNotes: ["Крепкий эспрессо", "Жареный фундук", "Плотная пенка crema"],
+      intensity: "4/5 — Крепкий",
+      format: "Кофейные капсулы",
+      suitableFor: ["Пользователи капсульных систем", "Премиальные офисы", "Отели и апарт-комплексы"],
       needs: ["pha-may", "van-phong", "de-pha"],
-      brewingMethod: ["Đặt viên nén vào máy tương thích.", "Chọn chế độ espresso hoặc lungo.", "Dùng ngay để giữ lớp crema."],
-      details: { "Dòng sản phẩm": "Viên nén Legend", "Phong cách": "Pha máy", "Quy cách demo": "Hộp viên nén", "Gợi ý kênh bán": "Điểm bán thiết bị, văn phòng, horeca" },
+      brewingMethod: ["Вставьте капсулу в совместимую кофемашину.", "Выберите режим эспрессо или лунго.", "Употребляйте сразу, чтобы сохранить текстуру пенки."],
+      details: { "Линейка продукции": "Капсулы Legend", "Стиль": "Кофемашина", "Формат demo": "Коробка капсул", "Каналы продаж": "Специализированные магазины, офисы, HoReCa" },
       relatedProductSlugs: ["legend-special-edition", "legend-classic", "legend-cappuccino"]
     },
     {
       id: 8,
       slug: "legend-cappuccino",
-      name: "Trung Nguyên Legend Cappuccino",
+      name: "Trung Nguyen Legend Cappuccino",
       category: "legend",
-      categoryLabel: "Bộ sưu tập Trung Nguyên Legend",
-      image: "assets/products/legend-cappuccino.svg",
-      shortDescription: "Tách cà phê mịn màng với cảm giác kem nhẹ, dễ tiếp cận mà vẫn giữ dấu ấn thương hiệu.",
-      longDescription: "Legend Cappuccino mở rộng danh mục cho nhu cầu thưởng thức mềm mại hơn, phù hợp với kênh bán lẻ và không gian làm việc đa dạng.",
-      flavorNotes: ["Kem mịn", "Ca cao sữa", "Hương cà phê dịu"],
-      intensity: "2/5 - Dịu",
-      format: "Gói hòa tan cappuccino",
-      suitableFor: ["Người thích vị mềm", "Khoảnh khắc thư giãn", "Văn phòng đa khẩu vị"],
+      categoryLabel: "Коллекция Trung Nguyen Legend",
+      image: "ảnh footage/ảnh sp (4).jpg",
+      shortDescription: "Мягкая чашка кофе с нежной молочной пенкой, простая в приготовлении и сохраняющая фирменный почерк бренда.",
+      longDescription: "Legend Cappuccino расширяет линейку для любителей более мягких молочных вкусов, идеально вписываясь в розничный ассортимент и офисную жизнь.",
+      flavorNotes: ["Нежные сливки", "Молочный шоколад", "Мягкий кофейный аромат"],
+      intensity: "2/5 — Мягкий",
+      format: "Капуччино в саше",
+      suitableFor: ["Любители нежных вкусов", "Моменты отдыха", "Многонациональные офисы"],
       needs: ["de-pha", "van-phong", "tien-loi"],
-      brewingMethod: ["Cho gói cà phê vào cốc lớn.", "Thêm nước nóng theo hướng dẫn bao bì.", "Khuấy nhẹ để tạo bề mặt mịn."],
-      details: { "Dòng sản phẩm": "Bộ sưu tập Legend", "Phong cách": "Cappuccino", "Quy cách demo": "Hộp gói lẻ", "Gợi ý kênh bán": "Bán lẻ và văn phòng" },
+      brewingMethod: ["Высыпьте содержимое пакетика в большую чашку.", "Добавьте горячую воду согласно инструкции.", "Слегка перемешайте для образования пышной пенки."],
+      details: { "Линейка продукции": "Коллекция Legend", "Стиль": "Капучино", "Формат demo": "Коробка с саше", "Каналы продаж": "Розничные сети и офисы" },
       relatedProductSlugs: ["g7-3in1", "legend-classic", "legend-capsule"]
     },
     {
       id: 9,
       slug: "sang-tao",
-      name: "Cà phê rang xay Sáng Tạo",
+      name: "Молотый кофе Creative",
       category: "rang-xay",
-      categoryLabel: "Cà phê rang xay",
-      image: "assets/products/sang-tao.svg",
-      shortDescription: "Dòng rang xay giàu thân vị dành cho nghi thức pha phin và trải nghiệm cà phê Việt.",
-      longDescription: "Cà phê Sáng Tạo đưa người thưởng thức đến gần hơn với phong cách pha truyền thống: thời gian chờ đợi, hương thơm rang xay và chất vị đầy đặn.",
-      flavorNotes: ["Robusta rang", "Sô-cô-la đen", "Thân vị dày"],
-      intensity: "5/5 - Rất đậm",
-      format: "Cà phê rang xay",
-      suitableFor: ["Người yêu pha phin", "Quán cà phê và horeca", "Người tìm trải nghiệm Việt nguyên bản"],
+      categoryLabel: "Зерновой и молотый кофе",
+      image: "ảnh footage/ảnh sp (5).jpg",
+      shortDescription: "Насыщенная линейка молотого кофе для традиционного заваривания в фине и знакомства со вьетнамской кофейной культурой.",
+      longDescription: "Кофе Creative приближает ценителя к традиционному ритуалу заваривания: медленное прокапывание, глубокий аромат и плотное тело напитка.",
+      flavorNotes: ["Жареный робуста", "Темный шоколад", "Плотное тело"],
+      intensity: "5/5 — Очень крепкий",
+      format: "Молотый кофе",
+      suitableFor: ["Любители заваривания в фине", "Кофейни и сегмент HoReCa", "Те, кто ищет аутентичный вьетнамский вкус"],
       needs: ["ca-phe-manh", "qua-tang"],
-      brewingMethod: ["Tráng phin bằng nước nóng.", "Cho cà phê rang xay vào phin và nén nhẹ.", "Ủ với ít nước, sau đó châm thêm và chờ nhỏ giọt."],
-      details: { "Dòng sản phẩm": "Rang xay", "Phong cách": "Pha phin", "Quy cách demo": "Gói cà phê", "Gợi ý kênh bán": "Cửa hàng đặc sản, horeca, bán lẻ" },
+      brewingMethod: ["Ополосните фин горячей водой.", "Насыпьте кофе в фильтр-фин и слегка прижмите прессом.", "Смочите небольшим количеством воды для предсмачивания, затем долейте воду и ждите окончания фильтрации."],
+      details: { "Линейка продукции": "Зерновой и молотый", "Стиль": "Заваривание в фине", "Формат demo": "Мягкий пакет", "Каналы продаж": "Специализированные кофейные полки, HoReCa, ритейл" },
       relatedProductSlugs: ["phin-giay", "g7-gu-manh-x2", "legend-special-edition"]
     },
     {
       id: 10,
       slug: "phin-giay",
-      name: "Phin giấy Trung Nguyên Legend",
+      name: "Дрип-пакеты Trung Nguyen Legend",
       category: "phin-giay",
-      categoryLabel: "Phin giấy",
-      image: "assets/products/phin-giay.svg",
-      shortDescription: "Nghi thức nhỏ giọt Việt Nam trong định dạng gọn nhẹ, thích hợp cho du lịch và văn phòng.",
-      longDescription: "Phin giấy tạo cầu nối giữa trải nghiệm pha nhỏ giọt và sự tiện lợi quốc tế: chỉ cần cốc cùng nước nóng để khám phá hương vị Việt.",
-      flavorNotes: ["Rang thơm", "Ca cao", "Đậm vừa"],
-      intensity: "4/5 - Đậm",
-      format: "Túi lọc treo trên cốc",
-      suitableFor: ["Người đi công tác", "Người muốn thử pha nhỏ giọt", "Kênh quà tặng trải nghiệm"],
+      categoryLabel: "Дрип-пакеты",
+      image: "ảnh footage/ảnh sp (1).png",
+      shortDescription: "Традиционный вьетнамский капельный метод в легком походном формате, идеально подходящем для путешествий и офиса.",
+      longDescription: "Дрип-пакеты объединяют медленный ритуал капельного заваривания и современное удобство: для получения вьетнамского вкуса нужны только чашка и горячая вода.",
+      flavorNotes: ["Душистая обжарка", "Какао", "Средняя крепость"],
+      intensity: "4/5 — Крепкий",
+      format: "Дрип-пакеты для чашки",
+      suitableFor: ["Для командировок и поездок", "Желающие попробовать капельный метод без покупки фина", "Подарочные наборы впечатлений"],
       needs: ["tien-loi", "de-pha", "van-phong", "qua-tang"],
-      brewingMethod: ["Mở túi lọc và gài lên miệng cốc.", "Rót một ít nước nóng để ủ cà phê.", "Rót tiếp từng đợt, tháo phin và thưởng thức."],
-      details: { "Dòng sản phẩm": "Phin giấy", "Phong cách": "Nhỏ giọt tiện lợi", "Quy cách demo": "Hộp túi lọc", "Gợi ý kênh bán": "Du lịch, quà tặng, văn phòng" },
+      brewingMethod: ["Откройте дрип-пакет и закрепите его на чашке.", "Налейте немного горячей воды, чтобы смочить кофе.", "Пролейте воду в несколько этапов, снимите пакет и наслаждайтесь кофе."],
+      details: { "Линейка продукции": "Дрип-пакеты", "Стиль": "Быстрый капельный", "Формат demo": "Коробка дрип-пакетов", "Каналы продаж": "Товары в дорогу, подарки, офисный сегмент" },
       relatedProductSlugs: ["sang-tao", "legend-classic", "g7-3in1"]
+    },
+    {
+      id: 11,
+      slug: "sang-tao-8",
+      name: "Молотый кофе Creative 8",
+      category: "rang-xay",
+      categoryLabel: "Зерновой и молотый кофе",
+      image: "ảnh footage/ảnh sp (2).png",
+      shortDescription: "Премиальный шедевр молотого кофе, созданный по секретной формуле из лучших зерен.",
+      longDescription: "Creative 8 представляет собой изысканный бленд лучших зерен Arabica, Robusta и Excelsa, дающий настой насыщенного коньячного цвета со стойким ароматом, плотным телом и богатым вкусом.",
+      flavorNotes: ["Стойкий аромат", "Богатый вкус", "Бархатистая текстура"],
+      intensity: "4/5 — Крепкий",
+      format: "Премиальный молотый кофе",
+      suitableFor: ["Подарки партнерам", "Особые моменты дома", "Настоящие кофейные гуру"],
+      needs: ["ca-phe-manh", "qua-tang", "de-pha"],
+      brewingMethod: ["Заваривайте в традиционном фильтр-фине.", "Добавьте сгущенное молоко для идеального вьетнамского кофе с молоком.", "Пейте не торопясь."],
+      details: { "Линейка продукции": "Премиум молотый", "Стиль": "Традиционный метод", "Формат demo": "Подарочная металлическая банка/коробка", "Каналы продаж": "Фирменные бутики, деликатесные супермаркеты" },
+      relatedProductSlugs: ["sang-tao", "legend-special-edition"]
+    },
+    {
+      id: 12,
+      slug: "legend-success",
+      name: "Trung Nguyen Legend Success",
+      category: "legend",
+      categoryLabel: "Коллекция Trung Nguyen Legend",
+      image: "ảnh footage/ảnh sp (3).png",
+      shortDescription: "Особый энергетический кофе для целеустремленных людей, стремящихся к успеху.",
+      longDescription: "Legend Success — это квинтэссенция лучших зерен робусты из Буон-Ма-Тхуота в сочетании с современными технологиями сверхтонкого помола, сохраняющими всю свежесть кофейного аромата.",
+      flavorNotes: ["Максимальная крепость", "Яркий аромат", "Вьетнамский характер"],
+      intensity: "5/5 — Экстремально крепкий",
+      format: "Сверхтонкий молотый кофе",
+      suitableFor: ["Предприниматели и лидеры", "Работа при высоких нагрузках", "Стартапы и инновации"],
+      needs: ["ca-phe-manh", "van-phong"],
+      brewingMethod: ["Традиционный фин.", "Или используйте рожковую кофеварку для максимальной экстракции.", "Отличен как в горячем виде, так и со льдом."],
+      details: { "Линейка продукции": "Энергетическая серия Legend", "Стиль": "Особый помол", "Формат demo": "Коробка", "Каналы продаж": "Магазины у дома, супермаркеты" },
+      relatedProductSlugs: ["g7-gu-manh-x2", "legend-special-edition"]
     }
   ];
 
@@ -189,23 +225,17 @@
   }
 
   function productCard(product) {
-    return '<article class="product-card">' +
-      '<a class="product-card__image" href="product-detail.html?slug=' + product.slug + '" aria-label="Xem chi tiết ' + product.name + '">' +
-        '<img src="' + product.image + '" alt="Bao bì minh họa ' + product.name + '">' +
-      '</a>' +
-      '<div class="product-card__content">' +
-        '<span class="product-category">' + product.categoryLabel + '</span>' +
-        '<h3><a href="product-detail.html?slug=' + product.slug + '">' + product.name + '</a></h3>' +
-        '<p>' + product.shortDescription + '</p>' +
-        '<div class="product-specs">' +
-          '<span><strong>Hương vị:</strong> ' + product.flavorNotes.slice(0, 2).join(", ") + '</span>' +
-          '<span><strong>Độ đậm:</strong> ' + product.intensity + '</span>' +
-          '<span><strong>Cách dùng:</strong> ' + product.format + '</span>' +
-        '</div>' +
-        '<div class="button-row">' +
-          '<a class="btn btn--primary" href="product-detail.html?slug=' + product.slug + '">Xem chi tiết</a>' +
-          '<a class="btn btn--outline" href="where-to-buy.html">Tìm điểm bán</a>' +
-        '</div>' +
+    return '<article class="tnl-product-card">' +
+      '<div class="tnl-product-card__image-wrap">' +
+        '<span class="tnl-badge">Новинка</span>' +
+        '<a href="product-detail.html?slug=' + product.slug + '" aria-label="Смотреть ' + product.name + '">' +
+          '<img src="' + product.image + '" alt="' + product.name + '">' +
+        '</a>' +
+        '<a href="product-detail.html?slug=' + product.slug + '" class="tnl-read-more">Подробнее</a>' +
+      '</div>' +
+      '<div class="tnl-product-card__info">' +
+        '<h3 class="tnl-product-card__title"><a href="product-detail.html?slug=' + product.slug + '">' + product.name + '</a></h3>' +
+        '<span class="tnl-product-card__category">' + product.categoryLabel + '</span>' +
       '</div>' +
     '</article>';
   }
@@ -264,27 +294,27 @@
     var related = product.relatedProductSlugs.map(bySlug).filter(Boolean);
     return '<section class="detail-shell">' +
       '<div class="container">' +
-        '<nav aria-label="Đường dẫn trang"><ol class="breadcrumb"><li><a href="index.html">Trang chủ</a></li><li><a href="products.html">Sản phẩm</a></li><li>' + product.name + '</li></ol></nav>' +
+        '<nav aria-label="Навигация по сайту"><ol class="breadcrumb"><li><a href="index.html">Главная</a></li><li><a href="products.html">Продукты</a></li><li>' + product.name + '</li></ol></nav>' +
         '<div class="product-detail-hero">' +
-          '<figure class="product-detail-image"><img src="' + product.image + '" alt="Bao bì minh họa ' + product.name + '"></figure>' +
+          '<figure class="product-detail-image"><img src="' + product.image + '" alt="Упаковка ' + product.name + '"></figure>' +
           '<div class="product-detail-copy">' +
             '<span class="product-category">' + product.categoryLabel + '</span>' +
             '<h1>' + product.name + '</h1>' +
             '<p class="lead">' + product.longDescription + '</p>' +
             '<div class="tag-list">' + product.flavorNotes.map(function (note) { return '<span class="tag">' + note + '</span>'; }).join("") + '</div>' +
-            '<p><strong>Độ đậm:</strong> ' + product.intensity + '</p>' +
-            '<div class="button-row"><a class="btn btn--primary" href="where-to-buy.html">Tìm điểm bán</a><a class="btn btn--outline" href="partners.html#dang-ky">Liên hệ phân phối</a></div>' +
+            '<p><strong>Крепость:</strong> ' + product.intensity + '</p>' +
+            '<div class="button-row"><a class="btn btn--primary" href="where-to-buy.html">Найти точку продаж</a><a class="btn btn--outline" href="partners.html#dang-ky">Связаться по дистрибуции</a></div>' +
           '</div>' +
         '</div>' +
       '</div>' +
     '</section>' +
     '<section class="section section--beige"><div class="container"><div class="detail-info-grid">' +
-      '<article class="detail-card reveal"><h3>Trải nghiệm hương vị</h3><p>' + product.longDescription + '</p><div class="tag-list" style="margin-top:16px">' + product.flavorNotes.map(function (note) { return '<span class="tag">' + note + '</span>'; }).join("") + '</div></article>' +
-      '<article class="detail-card reveal"><h3>Phù hợp với ai?</h3><ul>' + product.suitableFor.map(function (use) { return '<li>' + use + '</li>'; }).join("") + '</ul></article>' +
-      '<article class="detail-card reveal"><h3>Cách pha / cách sử dụng</h3><ul>' + product.brewingMethod.map(function (step) { return '<li>' + step + '</li>'; }).join("") + '</ul></article>' +
-      '<article class="detail-card reveal"><h3>Thông tin sản phẩm</h3><table class="spec-table"><tbody>' + Object.keys(product.details).map(function (key) { return '<tr><th>' + key + '</th><td>' + product.details[key] + '</td></tr>'; }).join("") + '</tbody></table></article>' +
+      '<article class="detail-card reveal"><h3>Вкусовой профиль</h3><p>' + product.longDescription + '</p><div class="tag-list" style="margin-top:16px">' + product.flavorNotes.map(function (note) { return '<span class="tag">' + note + '</span>'; }).join("") + '</div></article>' +
+      '<article class="detail-card reveal"><h3>Кому подходит?</h3><ul>' + product.suitableFor.map(function (use) { return '<li>' + use + '</li>'; }).join("") + '</ul></article>' +
+      '<article class="detail-card reveal"><h3>Способ приготовления</h3><ul>' + product.brewingMethod.map(function (step) { return '<li>' + step + '</li>'; }).join("") + '</ul></article>' +
+      '<article class="detail-card reveal"><h3>О продукте</h3><table class="spec-table"><tbody>' + Object.keys(product.details).map(function (key) { return '<tr><th>' + key + '</th><td>' + product.details[key] + '</td></tr>'; }).join("") + '</tbody></table></article>' +
     '</div></div></section>' +
-    '<section class="section"><div class="container"><div class="section-heading"><span class="eyebrow">Gợi ý tiếp theo</span><h2>Sản phẩm liên quan</h2></div><div class="product-grid">' + related.map(productCard).join("") + '</div></div></section>';
+    '<section class="section"><div class="container"><div class="section-heading"><span class="eyebrow">Рекомендации</span><h2>Похожие продукты</h2></div><div class="product-grid">' + related.map(productCard).join("") + '</div></div></section>';
   }
 
   function initDetail() {
@@ -293,10 +323,10 @@
     var slug = new URLSearchParams(window.location.search).get("slug") || "";
     var product = bySlug(slug);
     if (!product) {
-      target.innerHTML = '<section class="section"><div class="container"><div class="empty-state is-visible"><span class="eyebrow">Sản phẩm</span><h1>Không tìm thấy sản phẩm</h1><p>Đường dẫn này chưa có trong danh mục bản demo.</p><div class="button-row" style="justify-content:center;margin-top:25px"><a class="btn btn--primary" href="products.html">Quay lại sản phẩm</a></div></div></div></section>';
+      target.innerHTML = '<section class="section"><div class="container"><div class="empty-state is-visible"><span class="eyebrow">Продукты</span><h1>Продукт не найден</h1><p>Этот продукт отсутствует в каталоге демо-версии.</p><div class="button-row" style="justify-content:center;margin-top:25px"><a class="btn btn--primary" href="products.html">Назад к каталогу</a></div></div></div></section>';
       return;
     }
-    document.title = product.name + " | Trung Nguyên Legend";
+    document.title = product.name + " | Trung Nguyen Legend";
     target.innerHTML = renderDetail(product);
     target.querySelectorAll(".reveal").forEach(function (item) { item.classList.add("is-visible"); });
   }

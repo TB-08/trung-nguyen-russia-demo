@@ -21,8 +21,12 @@
     if (open) {
       lastFocused = document.activeElement;
       closeButton.focus();
-    } else if (lastFocused) {
-      lastFocused.focus();
+      if (window.lenis) window.lenis.stop();
+    } else {
+      if (lastFocused) {
+        lastFocused.focus();
+      }
+      if (window.lenis) window.lenis.start();
     }
   }
 
@@ -52,6 +56,32 @@
       }
     });
   }
+
+  // Video Modal Logic
+  var portalBtn = document.getElementById("portalPlayBtn");
+  var videoModal = document.getElementById("videoModal");
+  var videoOverlay = document.getElementById("videoModalOverlay");
+  var videoClose = document.getElementById("videoModalClose");
+
+  function openVideoModal() {
+    if (!videoModal) return;
+    videoModal.classList.add("is-active");
+    document.body.style.overflow = "hidden";
+    if (window.lenis) window.lenis.stop();
+  }
+
+  function closeVideoModal() {
+    if (!videoModal) return;
+    videoModal.classList.remove("is-active");
+    document.body.style.overflow = "";
+    if (window.lenis) window.lenis.start();
+    var iframe = videoModal.querySelector("iframe");
+    if (iframe) iframe.src = iframe.src;
+  }
+
+  if (portalBtn) portalBtn.addEventListener("click", openVideoModal);
+  if (videoOverlay) videoOverlay.addEventListener("click", closeVideoModal);
+  if (videoClose) videoClose.addEventListener("click", closeVideoModal);
 
   function initReveal() {
     var items = document.querySelectorAll(".reveal");
@@ -115,4 +145,39 @@
   markCurrentNavigation();
   initReveal();
   initSmoothAnchors();
+
+  // Load and initialize Lenis for smooth mouse scroll UX
+  var lenisScript = document.createElement("script");
+  lenisScript.src = "https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js";
+  lenisScript.onload = function () {
+    var lenis = new Lenis({
+      duration: 1.2,
+      easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+    window.lenis = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Bind all anchors using Lenis's smooth scrollTo instead of native
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener("click", function (event) {
+        var target = document.querySelector(anchor.hash);
+        if (!target) return;
+        event.preventDefault();
+        lenis.scrollTo(target);
+      });
+    });
+  };
+  document.head.appendChild(lenisScript);
 })();

@@ -40,6 +40,6 @@
     });
   }
 
-  connectForm("[data-partner-form]", "Cảm ơn bạn. Thông tin hợp tác đã được ghi nhận trong bản demo.");
-  connectForm("[data-contact-form]", "Cảm ơn bạn. Tin nhắn đã được ghi nhận trong bản demo.");
+  connectForm("[data-partner-form]", "Спасибо. Информация о сотрудничестве успешно сохранена в демо-версии.");
+  connectForm("[data-contact-form]", "Спасибо. Ваше сообщение успешно сохранено в демо-версии.");
 })();

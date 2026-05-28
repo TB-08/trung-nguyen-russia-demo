@@ -2,16 +2,16 @@
   "use strict";
 
   var stores = [
-    { id: 1, name: "Siêu thị Cao cấp Tverskaya", city: "Moscow", address: "12 Tverskaya, Moscow", type: "Siêu thị cao cấp", phone: "+7 (000) 100-10-10", coordinates: [55.757, 37.615], productAvailability: ["G7", "Bộ sưu tập Legend", "Phin giấy"] },
-    { id: 2, name: "Góc Cà phê Arbat", city: "Moscow", address: "28 Arbat, Moscow", type: "Cửa hàng đặc sản", phone: "+7 (000) 100-10-20", coordinates: [55.751, 37.59], productAvailability: ["G7", "Rang xay", "Viên nén"] },
-    { id: 3, name: "Siêu thị Cao cấp Nevsky", city: "Saint Petersburg", address: "62 Nevsky Prospekt, Saint Petersburg", type: "Siêu thị cao cấp", phone: "+7 (000) 200-20-10", coordinates: [59.934, 30.336], productAvailability: ["G7", "Bộ sưu tập Legend", "Viên nén"] },
-    { id: 4, name: "Góc Cà phê Baltic", city: "Saint Petersburg", address: "14 Sadovaya, Saint Petersburg", type: "Cửa hàng cà phê", phone: "+7 (000) 200-20-20", coordinates: [59.93, 30.323], productAvailability: ["Rang xay", "Phin giấy"] },
-    { id: 5, name: "Cửa hàng Riviera Sochi", city: "Sochi", address: "18 Kurortny Prospekt, Sochi", type: "Cửa hàng nhập khẩu", phone: "+7 (000) 300-30-10", coordinates: [43.586, 39.72], productAvailability: ["G7", "Phin giấy", "Bộ sưu tập Legend"] },
-    { id: 6, name: "Điểm Horeca Biển Đen", city: "Sochi", address: "7 Morskoy, Sochi", type: "Kênh horeca", phone: "+7 (000) 300-30-20", coordinates: [43.58, 39.728], productAvailability: ["Viên nén", "Rang xay"] },
-    { id: 7, name: "Siêu thị Trung tâm Kazan", city: "Kazan", address: "21 Bauman, Kazan", type: "Siêu thị", phone: "+7 (000) 400-40-10", coordinates: [55.794, 49.112], productAvailability: ["G7", "Bộ sưu tập Legend"] },
-    { id: 8, name: "Không gian Cà phê Volga", city: "Kazan", address: "9 Pushkina, Kazan", type: "Cửa hàng đặc sản", phone: "+7 (000) 400-40-20", coordinates: [55.79, 49.12], productAvailability: ["Phin giấy", "Rang xay", "Viên nén"] },
-    { id: 9, name: "Thực phẩm Cao cấp Siberia", city: "Novosibirsk", address: "33 Krasny Prospekt, Novosibirsk", type: "Siêu thị cao cấp", phone: "+7 (000) 500-50-10", coordinates: [55.03, 82.92], productAvailability: ["G7", "Bộ sưu tập Legend", "Phin giấy"] },
-    { id: 10, name: "Điểm Cà phê Năng lượng", city: "Novosibirsk", address: "8 Lenina, Novosibirsk", type: "Cửa hàng cà phê", phone: "+7 (000) 500-50-20", coordinates: [55.028, 82.911], productAvailability: ["G7", "Rang xay", "Viên nén"] }
+    { id: 1, name: "Супермаркет премиум-класса «Тверская»", city: "Moscow", address: "12 Tverskaya, Moscow", type: "Премиум-супермаркет", phone: "+7 (000) 100-10-10", coordinates: [55.757, 37.615], productAvailability: ["G7", "Коллекция Legend", "Дрип-пакеты"] },
+    { id: 2, name: "Кофейный уголок «Арбат»", city: "Moscow", address: "28 Arbat, Moscow", type: "Специализированный магазин", phone: "+7 (000) 100-10-20", coordinates: [55.751, 37.59], productAvailability: ["G7", "Молотый кофе", "Капсулы"] },
+    { id: 3, name: "Супермаркет премиум-класса «Невский»", city: "Saint Petersburg", address: "62 Nevsky Prospekt, Saint Petersburg", type: "Премиум-супермаркет", phone: "+7 (000) 200-20-10", coordinates: [59.934, 30.336], productAvailability: ["G7", "Коллекция Legend", "Капсулы"] },
+    { id: 4, name: "Кофейный уголок «Балтийский»", city: "Saint Petersburg", address: "14 Sadovaya, Saint Petersburg", type: "Кофейня", phone: "+7 (000) 200-20-20", coordinates: [59.93, 30.323], productAvailability: ["Молотый кофе", "Дрип-пакеты"] },
+    { id: 5, name: "Магазин «Ривьера Сочи»", city: "Sochi", address: "18 Kurortny Prospekt, Sochi", type: "Магазин импортных товаров", phone: "+7 (000) 300-30-10", coordinates: [43.586, 39.72], productAvailability: ["G7", "Дрип-пакеты", "Коллекция Legend"] },
+    { id: 6, name: "Точка HoReCa «Черное море»", city: "Sochi", address: "7 Morskoy, Sochi", type: "Канал HoReCa", phone: "+7 (000) 300-30-20", coordinates: [43.58, 39.728], productAvailability: ["Капсулы", "Молотый кофе"] },
+    { id: 7, name: "Центральный супермаркет «Казань»", city: "Kazan", address: "21 Bauman, Kazan", type: "Супермаркет", phone: "+7 (000) 400-40-10", coordinates: [55.794, 49.112], productAvailability: ["G7", "Коллекция Legend"] },
+    { id: 8, name: "Кофейное пространство «Волга»", city: "Kazan", address: "9 Pushkina, Kazan", type: "Специализированный магазин", phone: "+7 (000) 400-40-20", coordinates: [55.79, 49.12], productAvailability: ["Дрип-пакеты", "Молотый кофе", "Капсулы"] },
+    { id: 9, name: "Премиум-продукты «Сибирь»", city: "Novosibirsk", address: "33 Krasny Prospekt, Novosibirsk", type: "Премиум-супермаркет", phone: "+7 (000) 500-50-10", coordinates: [55.03, 82.92], productAvailability: ["G7", "Коллекция Legend", "Дрип-пакеты"] },
+    { id: 10, name: "Точка «Энергетический кофе»", city: "Novosibirsk", address: "8 Lenina, Novosibirsk", type: "Кофейня", phone: "+7 (000) 500-50-20", coordinates: [55.028, 82.911], productAvailability: ["G7", "Молотый кофе", "Капсулы"] }
   ];
 
   var mapPositions = {
@@ -26,9 +26,9 @@
     return '<article class="store-card' + (index === 0 ? " is-featured" : "") + '">' +
       '<div class="store-card__meta"><span>' + store.city + '</span><span>·</span><span>' + store.type + '</span></div>' +
       '<h3>' + store.name + '</h3>' +
-      '<p>' + store.address + '<br>Điện thoại demo: ' + store.phone + '</p>' +
+      '<p>' + store.address + '<br>Демо-телефон: ' + store.phone + '</p>' +
       '<div class="tag-list">' + store.productAvailability.map(function (item) { return '<span class="tag">' + item + '</span>'; }).join("") + '</div>' +
-      '<a class="text-link" href="#" data-direction-link>Xem chỉ đường</a>' +
+      '<a class="text-link" href="#" data-direction-link>Проложить маршрут</a>' +
     '</article>';
   }
 
@@ -43,7 +43,7 @@
     function selectCity(city) {
       var localStores = stores.filter(function (store) { return store.city === city; });
       list.innerHTML = localStores.map(storeCard).join("");
-      if (label) label.textContent = city + " · " + localStores.length + " điểm bán mẫu";
+      if (label) label.textContent = city + " · " + localStores.length + " точек продаж (демо)";
       (mapPositions[city] || []).forEach(function (position, index) {
         if (!pins[index]) return;
         pins[index].style.left = position[0];
@@ -58,7 +58,7 @@
         link.addEventListener("click", function (event) {
           event.preventDefault();
           if (window.showDemoToast) {
-            window.showDemoToast("Chỉ đường sẽ được mở qua Yandex.Maps khi tích hợp chính thức.");
+            window.showDemoToast("Построение маршрута будет доступно через Яндекс.Карты при официальном запуске.");
           }
         });
       });

@@ -1,314 +1,249 @@
 <!doctype html>
-<html lang="vi">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trang chủ | Trung Nguyên Legend - Thị trường Nga</title>
-  <meta name="description" content="Khám phá cà phê năng lượng Trung Nguyên Legend từ Việt Nam, danh mục sản phẩm và cơ hội hợp tác phân phối tại thị trường Nga.">
-  <meta property="og:title" content="Trung Nguyên Legend - Cà phê năng lượng từ Việt Nam">
-  <meta property="og:description" content="Bản demo thương hiệu, sản phẩm và hệ thống điểm bán định hướng cho thị trường Nga.">
+  <title>О нас | Trung Nguyen Legend</title>
+  <meta name="description" content="Узнайте о наследии, видении, философии энергетического кофе и глобальном пути развития Trung Nguyen Legend.">
+  <meta property="og:title" content="О Trung Nguyen Legend">
+  <meta property="og:description" content="Наследие вьетнамского кофе и дух открытий для международных рынков.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/coffee-craft.svg">
-  <link rel="canonical" href="https://ru.trungnguyenlegend.example/">
-  <!-- TODO: Cấu hình xác minh Yandex.Webmaster và IndexNow trên tên miền chính thức. -->
+  <meta property="og:image" content="assets/images/origin-buon-ma-thuot.svg">
+  <link rel="canonical" href="https://ru.trungnguyenlegend.example/about.html">
+  <!-- TODO: Cấu hình Yandex.Webmaster và IndexNow trên website chính thức. -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/creative-home.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Bỏ qua đến nội dung</a>
-  <header class="site-header site-header--overlay" data-header>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header site-header--overlay site-header--animated" data-header>
     <div class="container--wide header-inner">
-      <nav class="header-primary" aria-label="Điều hướng chính">
-        <a data-page="products.html" href="products.html">Sản phẩm</a>
-        <a data-page="partners.html" href="partners.html">Đối tác/NPP</a>
-        <a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a>
+      <nav class="header-primary" aria-label="Главная навигация">
+        <a data-page="products.html" href="products.html">Продукты</a>
+        <a data-page="partners.html" href="partners.html">Партнёрам</a>
+        <a data-page="coffee-story.html" href="coffee-story.html">История кофе</a>
+      <a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a>
       </nav>
-      <a class="brand-logo" href="index.html" aria-label="Trung Nguyên Legend - Trang chủ">
-        <img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyên Legend">
-        <img class="logo-light" src="assets/logo/logo-light.png" alt="Trung Nguyên Legend">
+      <a class="brand-logo" href="index.html" aria-label="Trung Nguyen Legend - Главная">
+        <img class="logo-color" src="assets/logo/logo.png" alt="Trung Nguyen Legend">
+        <img class="logo-light" src="assets/logo/logo-light.png" alt="Trung Nguyen Legend">
       </a>
       <div class="header-actions">
-        <a class="header-find" href="where-to-buy.html">Tìm điểm bán</a>
-        <button class="menu-toggle" type="button" data-menu-open aria-haspopup="dialog" aria-label="Mở danh mục điều hướng">
-          <span>Menu</span><span class="hamburger" aria-hidden="true"></span>
-        </button>
-      </div>
+        <div class="lang-switcher">
+          <button class="lang-current" type="button" aria-haspopup="listbox" aria-expanded="false">
+            RU
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <a href="#" class="lang-option active" role="option">RU - Русский</a>
+            <a href="#" class="lang-option" role="option">EN - English</a>
+            </div>
+        </div><button class="menu-toggle" type="button" data-menu-open aria-label="Открыть навигационное меню"><span>Menu</span><span class="hamburger" aria-hidden="true"></span></button></div>
     </div>
   </header>
-
-  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Danh mục điều hướng" aria-hidden="true">
+  <div class="fullscreen-menu" data-menu role="dialog" aria-modal="true" aria-label="Меню навигации" aria-hidden="true">
     <div class="container--wide">
-      <div class="menu-head">
-        <a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a>
-        <button class="menu-close" type="button" data-menu-close aria-label="Đóng danh mục điều hướng"></button>
-      </div>
+      <div class="menu-head"><a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyen Legend"></a><button class="menu-close" type="button" data-menu-close aria-label="Закрыть навигационное меню"></button></div>
       <div class="menu-layout">
-        <nav class="menu-nav" aria-label="Danh mục đầy đủ">
-          <a data-page="index.html" href="index.html">Trang chủ</a>
-          <a data-page="about.html" href="about.html">Về chúng tôi</a>
-          <a data-page="products.html" href="products.html">Sản phẩm</a>
-          <a data-page="coffee-story.html" href="coffee-story.html">Câu chuyện cà phê</a>
-          <a data-page="partners.html" href="partners.html">Đối tác/NPP</a>
-          <a data-page="where-to-buy.html" href="where-to-buy.html">Tìm điểm bán</a>
-          <a data-page="news.html" href="news.html">Tin tức</a>
-          <a data-page="contact.html" href="contact.html">Liên hệ</a>
+        <nav class="menu-nav" aria-label="Полное меню">
+          <a data-page="index.html" href="index.html">Главная</a><a data-page="about.html" href="about.html">О нас</a><a data-page="products.html" href="products.html">Продукты</a><a data-page="coffee-story.html" href="coffee-story.html">История кофе</a><a data-page="partners.html" href="partners.html">Партнёрам</a><a data-page="where-to-buy.html" href="where-to-buy.html">Найти точку продаж</a><a data-page="news.html" href="news.html">Новости</a><a data-page="contact.html" href="contact.html">Контакты</a>
         </nav>
         <aside class="menu-aside">
-          <span class="eyebrow">Thị trường Nga</span>
-          <h2>Kết nối cùng cà phê Việt Nam</h2>
-          <p>Tư vấn danh mục cho bán lẻ, horeca, quà tặng và hệ thống phân phối quốc tế.</p>
-          <a class="btn btn--cream" href="partners.html#dang-ky">Đăng ký hợp tác</a>
-          <div class="social-links">
-            <a class="social-link" href="#" aria-label="Telegram bản demo"><img src="assets/icons/telegram.svg" alt="">Telegram</a>
-            <a class="social-link" href="#" aria-label="VK bản demo"><img src="assets/icons/vk.svg" alt="">VK</a>
-          </div>
-          <p>Liên hệ mẫu: partner@trungnguyenlegend.example</p>
+          <span class="eyebrow">Российский рынок</span><h2>Откройте для себя вьетнамский кофе</h2><p>Консультация по ассортименту для розницы, HoReCa, корпоративных подарков и международных дистрибуторских сетей.</p><a class="btn btn--cream" href="partners.html#dang-ky">Стать партнером</a>
+          <div class="social-links"><a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a><a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a></div>
         </aside>
       </div>
     </div>
   </div>
 
-  <main id="main-content">
-    <section class="hero-home">
-      <div class="container--wide hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Di sản Việt Nam · Khát vọng quốc tế</span>
-          <h1>Trung Nguyên Legend - Cà phê năng lượng từ Việt Nam</h1>
-          <p>Hành trình cà phê Việt Nam với bản sắc mạnh mẽ, hương vị đậm sâu và tinh thần khai mở dành cho thị trường quốc tế.</p>
-          <div class="button-row">
-            <a class="btn btn--primary" href="products.html">Khám phá sản phẩm</a>
-            <a class="btn btn--ghost-light" href="where-to-buy.html">Tìm điểm bán</a>
+  <main id="main-content" class="page-main" style="padding-top:0">
+    <section class="hero-split">
+      <div class="hero-split__image-container">
+        <img class="hero-split__image" src="assets/images/trung-nguyen-coffee-hero.png" alt="Trung Nguyen Legend Coffee Experience">
+        <div class="hero-split__image-overlay"></div>
+      </div>
+      
+      <div class="hero-split__content">
+
+        <div class="hero-split__copy hero-split__copy--minimal">
+          <div style="transform: translateX(-30px); margin-bottom: -40px;">
+            <img class="anim-flip" src="assets/logo/logo-light.png" alt="Trung Nguyen Legend" style="width: 480px; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));">
+          </div>
+          <h1 class="hero-split__title" style="perspective: 1000px;">
+            <div style="transform: translateX(10px);"><span class="anim-flip" style="display: block; white-space: nowrap;">Вкус</span></div>
+            <div style="transform: translateX(-80px);"><span class="anim-flip" style="display: block; white-space: nowrap;">Истинного</span></div>
+            <div style="transform: translateX(-110px);"><span class="anim-flip" style="display: block; white-space: nowrap;">Пробуждения</span></div>
+          </h1>
+        </div>
+
+        <div class="hero-split__footer">
+          <div class="hero-split__indicators">
+            <span class="indicator-dot active"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+          </div>
+          <div class="hero-split__nav">
+            <button class="nav-arrow nav-arrow--left" aria-label="Previous image" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="nav-arrow nav-arrow--right" aria-label="Next image" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
           </div>
         </div>
-        <div class="hero-visual" aria-label="Trình bày sản phẩm cà phê Trung Nguyên Legend">
-          <img class="packshot packshot--one" src="assets/products/g7-gu-manh-x2.svg" alt="G7 Gu Mạnh X2">
-          <img class="packshot packshot--two" src="assets/products/legend-special.svg" alt="Trung Nguyên Legend Phiên bản Đặc biệt">
-          <div class="cup" aria-hidden="true"><span class="coffee"></span></div>
-          <span class="hero-caption">Robusta Việt Nam · Buôn Ma Thuột</span>
-        </div>
       </div>
+      
+      <!-- Vertical text scroll indicator -->
+      <div class="hero-split__scroll-indicator">
+        <span>ПРОКРУТИТЬ ВНИЗ</span>
+        <span class="scroll-line"></span>
+      </div>
+      
+      <!-- Responsive SVG clip path -->
+      <svg class="svg-clip-defs">
+        <defs>
+          <clipPath id="image-curve" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0 L 0.72,0 L 0.56,1 L 0,1 Z" />
+          </clipPath>
+        </defs>
+      </svg>
     </section>
 
-    <section class="proof-strip" aria-label="Điểm nổi bật thương hiệu">
-      <div class="container--wide proof-grid">
-        <article class="fact-card"><strong>Di sản cà phê Việt Nam</strong><span>Bắt nguồn từ vùng đất Buôn Ma Thuột.</span></article>
-        <article class="fact-card"><strong>Cà phê năng lượng</strong><span>Tinh thần mạnh mẽ và khai mở.</span></article>
-        <article class="fact-card"><strong>Danh mục đa dạng</strong><span>Từ G7 đến bộ sưu tập cao cấp.</span></article>
-        <article class="fact-card"><strong>Hướng đến quốc tế</strong><span>Nội dung sẵn sàng bản địa hóa.</span></article>
-        <article class="fact-card"><strong>Bán lẻ & phân phối</strong><span>Luồng hỗ trợ đối tác rõ ràng.</span></article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="danh-muc">
+    <!-- 2. BỘ SƯU TẬP COFFEE -->
+    <section class="section">
       <div class="container--wide">
         <div class="section-heading section-heading--center">
-          <span class="eyebrow">Danh mục</span>
-          <h2>Năm cách khám phá cà phê Việt</h2>
-          <p>Danh mục được tổ chức để người tiêu dùng dễ lựa chọn và đối tác dễ xây dựng cơ cấu hàng hóa theo từng kênh.</p>
+          <span class="eyebrow">Избранное</span>
+          <h2>Кофейная коллекция</h2>
+          <p>Пять ключевых позиций, отражающих широту ассортимента — от удобства в повседневной жизни<br>до премиальных подарков.</p>
         </div>
-        <div class="category-grid">
-          <article class="category-card">
-            <span class="category-index">01 / TIỆN LỢI</span>
-            <h3>Cà phê hòa tan G7</h3>
-            <p>Những lựa chọn đậm vị, nhanh gọn cho ngày làm việc năng động.</p>
-            <a class="text-link" href="products.html">Xem danh mục</a>
+        <div class="arched-grid">
+          <article class="arched-card reveal">
+            <figure class="arched-card__media"><img src="assets/images/sp1.png" alt="Продукты 1"></figure>
+            <h3 class="arched-card__title">G7 3 IN 1</h3>
           </article>
-          <article class="category-card">
-            <span class="category-index">02 / NGHI THỨC</span>
-            <h3>Cà phê rang xay</h3>
-            <p>Hương rang sâu dành cho pha phin và trải nghiệm nguyên bản.</p>
-            <a class="text-link" href="products.html">Xem danh mục</a>
+          <article class="arched-card reveal" style="animation-delay: 0.1s;">
+            <figure class="arched-card__media"><img src="assets/images/sp2.png" alt="Продукты 2"></figure>
+            <h3 class="arched-card__title">LEGEND SPECIAL</h3>
           </article>
-          <article class="category-card">
-            <span class="category-index">03 / CAO CẤP</span>
-            <h3>Bộ sưu tập Legend</h3>
-            <p>Diện mạo trang trọng cho thưởng thức và quà tặng tinh tế.</p>
-            <a class="text-link" href="products.html">Xem danh mục</a>
+          <article class="arched-card reveal" style="animation-delay: 0.2s;">
+            <figure class="arched-card__media"><img src="assets/images/sp3.png" alt="Продукты 3"></figure>
+            <h3 class="arched-card__title">ТВОРЧЕСКИЙ №1</h3>
           </article>
-          <article class="category-card">
-            <span class="category-index">04 / HIỆN ĐẠI</span>
-            <h3>Viên nén cà phê</h3>
-            <p>Pha máy nhất quán cho gia đình, văn phòng và dịch vụ lưu trú.</p>
-            <a class="text-link" href="products.html">Xem danh mục</a>
+          <article class="arched-card reveal" style="animation-delay: 0.3s;">
+            <figure class="arched-card__media"><img src="assets/images/sp4.png" alt="Продукты 4"></figure>
+            <h3 class="arched-card__title">ТВОРЧЕСКИЙ №8</h3>
           </article>
-          <article class="category-card">
-            <span class="category-index">05 / DI CHUYỂN</span>
-            <h3>Phin giấy</h3>
-            <p>Trải nghiệm nhỏ giọt Việt Nam ở bất kỳ nơi đâu.</p>
-            <a class="text-link" href="products.html">Xem danh mục</a>
+          <article class="arched-card reveal" style="animation-delay: 0.4s;">
+            <figure class="arched-card__media"><img src="assets/images/sp5.jpg" alt="Продукты 5"></figure>
+            <h3 class="arched-card__title">CAPSULE</h3>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--beige">
-      <div class="container two-column">
-        <figure class="editorial-media reveal">
-          <img src="assets/images/origin-buon-ma-thuot.svg" alt="Minh họa vùng nguyên liệu Buôn Ma Thuột">
-        </figure>
-        <div class="reveal">
-          <div class="section-heading">
-            <span class="eyebrow">Khác biệt Việt Nam</span>
-            <h2>Vì sao cà phê Việt tạo dấu ấn?</h2>
-            <p>Từ vùng đất cao nguyên đến phong cách Robusta, cà phê Việt mang cấu trúc hương vị rõ và câu chuyện nguồn gốc giàu sức gợi.</p>
+    <!-- 3. KINH NGHIỆM VÀ TRUYỀN THỐNG -->
+    <section class="section section--bento" id="di-san">
+      <div class="container bento-container">
+        
+        <div class="bento-intro sa-reveal">
+          <div class="bento-intro__left">
+            <span class="eyebrow">Описание</span>
+            <h2>Опыт и традиции, проверенные временем</h2>
           </div>
-          <div class="feature-grid">
-            <article class="feature-card"><span class="feature-number">01</span><h3>Buôn Ma Thuột</h3><p>Vùng đất gắn với bản sắc cà phê Việt Nam.</p></article>
-            <article class="feature-card"><span class="feature-number">02</span><h3>Robusta Việt Nam</h3><p>Thân vị dày, đậm rang và hậu vị bền.</p></article>
-            <article class="feature-card"><span class="feature-number">03</span><h3>Giàu năng lượng</h3><p>Phù hợp với gu thưởng thức mạnh mẽ.</p></article>
-            <article class="feature-card"><span class="feature-number">04</span><h3>Dễ nhận biết</h3><p>Khác biệt rõ với phong cách vị nhẹ.</p></article>
+          <div class="bento-intro__right">
+            <p>Trung Nguyen Legend предлагает линейку вьетнамского кофе с насыщенным вкусом, зарядом энергии и богатой историей бренда. Продукты подходят как для индивидуальных потребителей, так и для дистрибуторских сетей на международных рынках.</p>
+            <p>От удобного G7 и зернового кофе до премиальных коллекций — каждая линейка создаёт особую точку соприкосновения, объединённую единым образом: уверенный и современный Вьетнам.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section section--brown">
-      <div class="container two-column">
-        <div class="editorial-panel reveal">
-          <span class="eyebrow">Coffee Tao</span>
-          <blockquote>Cà phê không chỉ đánh thức giác quan, mà còn mở ra năng lượng của suy nghĩ và kết nối.</blockquote>
-          <p>Triết lý cà phê được kể bằng ngôn ngữ dễ tiếp cận: nguồn gốc có chiều sâu, hương vị đáng nhớ và mỗi tách cà phê là một khoảnh khắc tỉnh thức.</p>
-          <a class="btn btn--primary" style="margin-top:27px" href="coffee-story.html">Đọc câu chuyện cà phê</a>
-        </div>
-        <figure class="editorial-media reveal">
-          <img src="assets/images/coffee-craft.svg" alt="Minh họa tách cà phê và nghi thức thưởng thức">
-        </figure>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container--wide">
-        <div class="section-heading">
-          <span class="eyebrow">Nổi bật</span>
-          <h2>Sản phẩm được giới thiệu</h2>
-          <p>Năm lựa chọn đại diện cho chiều rộng danh mục, từ nhịp sống tiện lợi đến quà tặng cao cấp.</p>
-        </div>
-        <div class="product-grid" data-featured-products="g7-3in1,g7-gu-manh-x2,legend-special-edition,legend-capsule,phin-giay"></div>
-      </div>
-    </section>
-
-    <section class="section section--beige">
-      <div class="container--wide">
-        <div class="partner-highlight reveal">
-          <div class="partner-highlight__content">
-            <span class="eyebrow">Hợp tác B2B</span>
-            <h2>Đồng hành cùng Trung Nguyên Legend tại thị trường Nga</h2>
-            <p>Dành cho nhà phân phối, chuỗi siêu thị, bán lẻ, horeca và cửa hàng đặc sản cần một thương hiệu cà phê có bản sắc, danh mục rõ và câu chuyện dễ truyền thông.</p>
-            <div class="button-row">
-              <a class="btn btn--cream" href="partners.html">Trở thành đối tác</a>
-              <a class="btn btn--ghost-light" href="products.html">Xem danh mục</a>
+        <div class="bento-grid sa-reveal" style="transition-delay: 0.2s;">
+          
+          <a href="#" class="bento-item bento-item--1">
+            <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="bento-overlay"></div>
+            <div class="bento-ghost-num">01</div>
+            <div class="bento-content">
+              <div class="bento-title">
+                <h3>Истоки</h3>
+              </div>
+              <p class="bento-text">Связь с кофейной культурой и сырьевой базой Вьетнама.</p>
             </div>
-          </div>
-          <figure class="partner-highlight__media">
-            <img src="assets/images/partner-display.svg" alt="Minh họa khu vực trưng bày danh mục cho đối tác">
-          </figure>
+          </a>
+          
+          <a href="#" class="bento-item bento-item--2">
+            <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="bento-overlay"></div>
+            <div class="bento-ghost-num">02</div>
+            <div class="bento-content">
+              <div class="bento-title">
+                <h3>Вкус</h3>
+              </div>
+              <p class="bento-text">Плотный Robusta с насыщенным телом и узнаваемым характером.</p>
+            </div>
+          </a>
+
+          <a href="#" class="bento-item bento-item--3">
+            <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="bento-overlay"></div>
+            <div class="bento-ghost-num">03</div>
+            <div class="bento-content">
+              <div class="bento-title">
+                <h3>Видение</h3>
+              </div>
+              <p class="bento-text">Донести вьетнамский кофейный опыт до всего мира.</p>
+            </div>
+          </a>
+
+          <a href="#" class="bento-item bento-item--4">
+            <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="bento-overlay"></div>
+            <div class="bento-ghost-num">04</div>
+            <div class="bento-content">
+              <div class="bento-title">
+                <h3>Каталог</h3>
+              </div>
+              <p class="bento-text">Достаточно широкий для потребления, подарков и дистрибуции.</p>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
 
-    <section class="section" id="diem-ban">
-      <div class="container--wide">
-        <div class="section-heading">
-          <span class="eyebrow">Điểm bán mẫu</span>
-          <h2>Tìm sản phẩm gần bạn</h2>
-          <p>Mô phỏng trải nghiệm định vị điểm bán theo thành phố với hướng tích hợp Yandex.Maps khi triển khai chính thức.</p>
-        </div>
-        <div class="city-tabs" role="tablist" aria-label="Chọn thành phố">
-          <button class="city-tab is-active" type="button" data-city="Moscow" role="tab">Moscow</button>
-          <button class="city-tab" type="button" data-city="Saint Petersburg" role="tab">Saint Petersburg</button>
-          <button class="city-tab" type="button" data-city="Sochi" role="tab">Sochi</button>
-          <button class="city-tab" type="button" data-city="Kazan" role="tab">Kazan</button>
-          <button class="city-tab" type="button" data-city="Novosibirsk" role="tab">Novosibirsk</button>
-        </div>
-        <div class="locator-shell">
-          <!-- TODO: Integrate real Yandex.Maps API here. -->
-          <div class="map-mock reveal" aria-label="Bản đồ Yandex.Maps mô phỏng">
-            <span class="map-city-label" data-map-city>Moscow</span>
-            <span class="map-river" aria-hidden="true"></span>
-            <span class="map-pin map-pin--primary" data-map-pin aria-hidden="true"></span>
-            <span class="map-pin map-pin--secondary" data-map-pin aria-hidden="true"></span>
-            <span class="map-pin map-pin--third" data-map-pin aria-hidden="true"></span>
+    <!-- 4. CINEMATIC 3D PORTAL -->
+    <section class="cinematic-portal reveal">
+      <div class="portal-container">
+        <!-- Premium dark coffee texture for the 3D space -->
+        <div class="portal-bg" style="background-image: url('https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=2000&auto=format&fit=crop');"></div>
+        <div class="portal-overlay"></div>
+        <div class="portal-play" id="portalPlayBtn">
+          <div class="portal-play__btn">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
           </div>
-          <div class="store-list reveal" data-store-list data-initial-city="Moscow"></div>
-        </div>
-        <div class="button-row" style="margin-top:29px">
-          <a class="btn btn--primary" href="where-to-buy.html">Xem toàn bộ điểm bán</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--beige">
-      <div class="container--wide">
-        <div class="section-heading">
-          <span class="eyebrow">Tin tức & văn hóa</span>
-          <h2>Câu chuyện mới từ cà phê Việt</h2>
-        </div>
-        <div class="news-grid" data-news-preview></div>
-        <div class="button-row" style="margin-top:30px">
-          <a class="btn btn--outline" href="news.html">Xem tin tức</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta-panel reveal">
-          <div>
-            <span class="eyebrow">Trung Nguyên Legend</span>
-            <h2>Khám phá cà phê năng lượng Việt Nam</h2>
-            <p>Chọn trải nghiệm cho riêng bạn hoặc mở đầu một cơ hội hợp tác phân phối.</p>
-          </div>
-          <div class="button-row">
-            <a class="btn btn--cream" href="products.html">Xem sản phẩm</a>
-            <a class="btn btn--ghost-light" href="partners.html">Liên hệ hợp tác</a>
-          </div>
+          <span class="portal-play__text">ИССЛЕДОВАТЬ</span>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container--wide">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand-logo" href="index.html"><img src="assets/logo/logo-light.png" alt="Trung Nguyên Legend"></a>
-          <p>Demo frontend cho định hướng thương hiệu Trung Nguyên Legend tại thị trường Nga.</p>
-          <div class="social-links">
-            <a class="social-link" href="#"><img src="assets/icons/telegram.svg" alt="">Telegram</a>
-            <a class="social-link" href="#"><img src="assets/icons/vk.svg" alt="">VK</a>
-          </div>
-        </div>
-        <nav class="footer-column" aria-label="Khám phá">
-          <h2>Khám phá</h2>
-          <a href="about.html">Về chúng tôi</a>
-          <a href="coffee-story.html">Câu chuyện cà phê</a>
-          <a href="news.html">Tin tức</a>
-        </nav>
-        <nav class="footer-column" aria-label="Sản phẩm và mua hàng">
-          <h2>Sản phẩm</h2>
-          <a href="products.html">Danh mục sản phẩm</a>
-          <a href="where-to-buy.html">Tìm điểm bán</a>
-          <a href="product-detail.html?slug=g7-3in1">G7 3 trong 1</a>
-        </nav>
-        <nav class="footer-column" aria-label="Hợp tác và liên hệ">
-          <h2>Liên hệ</h2>
-          <a href="partners.html">Đối tác/NPP</a>
-          <a href="contact.html">Gửi liên hệ</a>
-          <a href="#">Chính sách bảo mật</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>Demo frontend - nội dung tiếng Việt, sẵn sàng bản địa hóa cho thị trường Nga. © <span data-year></span>.</p>
-        <div class="legal-links"><a href="#">Chính sách bảo mật</a><a href="#">Điều khoản sử dụng</a><a href="#">Cookie</a></div>
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal__overlay" id="videoModalOverlay"></div>
+    <div class="video-modal__content">
+      <button class="video-modal__close" id="videoModalClose" aria-label="Закрыть видео">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="white"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <div class="video-modal__player">
+        <iframe src="https://www.youtube.com/embed/yQ41aDkP9j4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
     </div>
-  </footer>
+  </div>
+
   <div class="toast" data-toast role="status" aria-live="polite"></div>
-  <!-- TODO: Tích hợp Yandex.Metrica khi tên miền và chính sách đồng thuận được phê duyệt. -->
+  <!-- TODO: Tích hợp Yandex.Metrica khi triển khai chính thức. -->
   <script src="js/main.js"></script>
-  <script src="js/products.js"></script>
-  <script src="js/stores.js"></script>
-  <script src="js/news.js"></script>
 </body>
 </html>
